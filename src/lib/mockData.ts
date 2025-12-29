@@ -1,4 +1,4 @@
-import { CountryData } from "./types";
+// CountryData interface is defined below
 
 export interface CountryData {
     id: string;
@@ -7,16 +7,15 @@ export interface CountryData {
     powerIndex: number;
     flagUrl: string;
     mapUrl: string;
-    mapUrl: string;
     coordinates: [number, number];
     modernizationLevel?: number; // 1-10 scale (1=0.5x, 10=2.0x)
-    
+
     nuclear: {
         hasNuclear: boolean;
         stockpile: number;
         deployed: number;
     };
-    
+
     navy: {
         totalShips: number;
         aircraftCarriers: number;
@@ -28,7 +27,7 @@ export interface CountryData {
         merchantMarine: number;
         majorPorts: number;
     };
-    
+
     army: {
         activePersonnel: number;
         reservePersonnel: number;
@@ -38,7 +37,7 @@ export interface CountryData {
         towedArtillery: number;
         rocketProjectors: number;
     };
-    
+
     airforce: {
         totalAircraft: number;
         fighters: number;
@@ -51,10 +50,10 @@ export interface CountryData {
         attackHelicopters: number;
         bombers: number;
     };
-    
+
     relations: {
-        allies: Array<{name: string; strength: number}>;
-        potentialThreats: Array<{name: string; strength: number}>;
+        allies: Array<{ name: string; strength: number }>;
+        potentialThreats: Array<{ name: string; strength: number }>;
     };
 }
 
@@ -106,8 +105,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
-            potentialThreats: [{name: "North Korea", strength: 9}, {name: "Iran", strength: 8}, {name: "China", strength: 7}, {name: "Russia", strength: 7}],
+            allies: [{ name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
+            potentialThreats: [{ name: "North Korea", strength: 9 }, { name: "Iran", strength: 8 }, { name: "China", strength: 7 }, { name: "Russia", strength: 7 }],
         },
     },
     {
@@ -157,8 +156,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Belarus", strength: 9}, {name: "Armenia", strength: 9}, {name: "Kazakhstan", strength: 9}, {name: "Kyrgyzstan", strength: 9}, {name: "Tajikistan", strength: 9}, {name: "China", strength: 7}],
-            potentialThreats: [{name: "Ukraine", strength: 10}, {name: "United States", strength: 7}, {name: "United Kingdom", strength: 6}, {name: "Poland", strength: 6}],
+            allies: [{ name: "Belarus", strength: 9 }, { name: "Armenia", strength: 9 }, { name: "Kazakhstan", strength: 9 }, { name: "Kyrgyzstan", strength: 9 }, { name: "Tajikistan", strength: 9 }, { name: "China", strength: 7 }],
+            potentialThreats: [{ name: "Ukraine", strength: 10 }, { name: "United States", strength: 7 }, { name: "United Kingdom", strength: 6 }, { name: "Poland", strength: 6 }],
         },
     },
     {
@@ -208,8 +207,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Pakistan", strength: 9}, {name: "North Korea", strength: 8}, {name: "Russia", strength: 7}, {name: "Iran", strength: 7}, {name: "Cambodia", strength: 7}, {name: "Belarus", strength: 6}, {name: "Myanmar", strength: 6}],
-            potentialThreats: [{name: "Taiwan", strength: 9}, {name: "United States", strength: 7}, {name: "India", strength: 7}, {name: "Japan", strength: 6}],
+            allies: [{ name: "Pakistan", strength: 9 }, { name: "North Korea", strength: 8 }, { name: "Russia", strength: 7 }, { name: "Iran", strength: 7 }, { name: "Cambodia", strength: 7 }, { name: "Belarus", strength: 6 }, { name: "Myanmar", strength: 6 }],
+            potentialThreats: [{ name: "Taiwan", strength: 9 }, { name: "United States", strength: 7 }, { name: "India", strength: 7 }, { name: "Japan", strength: 6 }],
         },
     },
     {
@@ -260,7 +259,7 @@ export const mockCountries: CountryData[] = [
         },
         relations: {
             allies: [],
-            potentialThreats: [{name: "Pakistan", strength: 10}, {name: "China", strength: 7}],
+            potentialThreats: [{ name: "Pakistan", strength: 10 }, { name: "China", strength: 7 }],
         },
     },
     {
@@ -310,8 +309,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}],
-            potentialThreats: [{name: "North Korea", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }],
+            potentialThreats: [{ name: "North Korea", strength: 10 }],
         },
     },
     {
@@ -361,7 +360,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -412,7 +411,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -463,8 +462,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}],
-            potentialThreats: [{name: "North Korea", strength: 8}, {name: "China", strength: 6}],
+            allies: [{ name: "United States", strength: 10 }],
+            potentialThreats: [{ name: "North Korea", strength: 8 }, { name: "China", strength: 6 }],
         },
     },
     {
@@ -514,8 +513,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
-            potentialThreats: [{name: "Syria", strength: 6}, {name: "Greece", strength: 5}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
+            potentialThreats: [{ name: "Syria", strength: 6 }, { name: "Greece", strength: 5 }],
         },
     },
     {
@@ -565,7 +564,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -667,8 +666,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "China", strength: 9}],
-            potentialThreats: [{name: "India", strength: 10}],
+            allies: [{ name: "China", strength: 9 }],
+            potentialThreats: [{ name: "India", strength: 10 }],
         },
     },
     {
@@ -769,7 +768,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -821,7 +820,7 @@ export const mockCountries: CountryData[] = [
         },
         relations: {
             allies: [],
-            potentialThreats: [{name: "Iran", strength: 9}, {name: "Syria", strength: 8}, {name: "Lebanon", strength: 7}],
+            potentialThreats: [{ name: "Iran", strength: 9 }, { name: "Syria", strength: 8 }, { name: "Lebanon", strength: 7 }],
         },
     },
     {
@@ -871,8 +870,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "China", strength: 7}],
-            potentialThreats: [{name: "Israel", strength: 9}, {name: "United States", strength: 8}, {name: "Saudi Arabia", strength: 7}],
+            allies: [{ name: "China", strength: 7 }],
+            potentialThreats: [{ name: "Israel", strength: 9 }, { name: "United States", strength: 8 }, { name: "Saudi Arabia", strength: 7 }],
         },
     },
     {
@@ -922,7 +921,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -973,7 +972,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "Canada", strength: 10}, {name: "New Zealand", strength: 10}, {name: "United States", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "Canada", strength: 10 }, { name: "New Zealand", strength: 10 }, { name: "United States", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -1024,7 +1023,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -1076,7 +1075,7 @@ export const mockCountries: CountryData[] = [
         },
         relations: {
             allies: [],
-            potentialThreats: [{name: "Russia", strength: 10}],
+            potentialThreats: [{ name: "Russia", strength: 10 }],
         },
     },
     {
@@ -1126,7 +1125,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -1177,7 +1176,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 9}],
+            allies: [{ name: "United States", strength: 9 }],
             potentialThreats: [],
         },
     },
@@ -1229,7 +1228,7 @@ export const mockCountries: CountryData[] = [
         },
         relations: {
             allies: [],
-            potentialThreats: [{name: "China", strength: 5}],
+            potentialThreats: [{ name: "China", strength: 5 }],
         },
     },
     {
@@ -1279,8 +1278,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
-            potentialThreats: [{name: "Iran", strength: 7}, {name: "Yemen", strength: 6}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
+            potentialThreats: [{ name: "Iran", strength: 7 }, { name: "Yemen", strength: 6 }],
         },
     },
     {
@@ -1330,7 +1329,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 8}],
+            allies: [{ name: "United States", strength: 8 }],
             potentialThreats: [],
         },
     },
@@ -1381,7 +1380,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -1483,7 +1482,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -1534,7 +1533,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 8}],
+            allies: [{ name: "United States", strength: 8 }],
             potentialThreats: [],
         },
     },
@@ -1585,8 +1584,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
-            potentialThreats: [{name: "Turkiye", strength: 5}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
+            potentialThreats: [{ name: "Turkiye", strength: 5 }],
         },
     },
     {
@@ -1789,8 +1788,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "China", strength: 8}],
-            potentialThreats: [{name: "South Korea", strength: 10}, {name: "United States", strength: 9}, {name: "Japan", strength: 8}],
+            allies: [{ name: "China", strength: 8 }],
+            potentialThreats: [{ name: "South Korea", strength: 10 }, { name: "United States", strength: 9 }, { name: "Japan", strength: 8 }],
         },
     },
     {
@@ -1891,7 +1890,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Belgium", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Belgium", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -1942,7 +1941,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "China", strength: 6}],
+            allies: [{ name: "China", strength: 6 }],
             potentialThreats: [],
         },
     },
@@ -1993,7 +1992,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2044,7 +2043,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2146,7 +2145,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 9}],
+            allies: [{ name: "United States", strength: 9 }],
             potentialThreats: [],
         },
     },
@@ -2248,7 +2247,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -2350,7 +2349,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2656,7 +2655,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2758,7 +2757,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2809,7 +2808,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -2860,7 +2859,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -2962,7 +2961,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Russia", strength: 9}, {name: "Belarus", strength: 7}, {name: "Armenia", strength: 7}, {name: "Kyrgyzstan", strength: 7}, {name: "Tajikistan", strength: 7}],
+            allies: [{ name: "Russia", strength: 9 }, { name: "Belarus", strength: 7 }, { name: "Armenia", strength: 7 }, { name: "Kyrgyzstan", strength: 7 }, { name: "Tajikistan", strength: 7 }],
             potentialThreats: [],
         },
     },
@@ -3064,7 +3063,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -3116,7 +3115,7 @@ export const mockCountries: CountryData[] = [
         },
         relations: {
             allies: [],
-            potentialThreats: [{name: "Armenia", strength: 9}],
+            potentialThreats: [{ name: "Armenia", strength: 9 }],
         },
     },
     {
@@ -3166,7 +3165,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Greece", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Greece", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -3217,7 +3216,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -3319,7 +3318,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -3625,7 +3624,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Russia", strength: 9}, {name: "Armenia", strength: 7}, {name: "Kazakhstan", strength: 7}, {name: "Kyrgyzstan", strength: 7}, {name: "Tajikistan", strength: 7}, {name: "China", strength: 6}],
+            allies: [{ name: "Russia", strength: 9 }, { name: "Armenia", strength: 7 }, { name: "Kazakhstan", strength: 7 }, { name: "Kyrgyzstan", strength: 7 }, { name: "Tajikistan", strength: 7 }, { name: "China", strength: 6 }],
             potentialThreats: [],
         },
     },
@@ -3676,7 +3675,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -3727,7 +3726,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -3778,7 +3777,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -3829,7 +3828,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -3880,7 +3879,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -3931,7 +3930,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}, {name: "Tunisia", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }, { name: "Tunisia", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4033,7 +4032,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -4084,7 +4083,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4186,7 +4185,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4237,7 +4236,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4390,7 +4389,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4441,7 +4440,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "Canada", strength: 10}, {name: "Australia", strength: 10}, {name: "United States", strength: 9}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Australia", strength: 10 }, { name: "United States", strength: 9 }],
             potentialThreats: [],
         },
     },
@@ -4543,7 +4542,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -4645,7 +4644,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -4696,8 +4695,8 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Russia", strength: 9}, {name: "Belarus", strength: 7}, {name: "Kazakhstan", strength: 7}, {name: "Kyrgyzstan", strength: 7}, {name: "Tajikistan", strength: 7}],
-            potentialThreats: [{name: "Azerbaijan", strength: 9}],
+            allies: [{ name: "Russia", strength: 9 }, { name: "Belarus", strength: 7 }, { name: "Kazakhstan", strength: 7 }, { name: "Kyrgyzstan", strength: 7 }, { name: "Tajikistan", strength: 7 }],
+            potentialThreats: [{ name: "Azerbaijan", strength: 9 }],
         },
     },
     {
@@ -4900,7 +4899,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "China", strength: 7}],
+            allies: [{ name: "China", strength: 7 }],
             potentialThreats: [],
         },
     },
@@ -4951,7 +4950,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -5104,7 +5103,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -5410,7 +5409,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Russia", strength: 9}, {name: "Belarus", strength: 7}, {name: "Armenia", strength: 7}, {name: "Kazakhstan", strength: 7}, {name: "Tajikistan", strength: 7}],
+            allies: [{ name: "Russia", strength: 9 }, { name: "Belarus", strength: 7 }, { name: "Armenia", strength: 7 }, { name: "Kazakhstan", strength: 7 }, { name: "Tajikistan", strength: 7 }],
             potentialThreats: [],
         },
     },
@@ -5512,7 +5511,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -5563,7 +5562,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Russia", strength: 9}, {name: "Belarus", strength: 7}, {name: "Armenia", strength: 7}, {name: "Kazakhstan", strength: 7}, {name: "Kyrgyzstan", strength: 7}],
+            allies: [{ name: "Russia", strength: 9 }, { name: "Belarus", strength: 7 }, { name: "Armenia", strength: 7 }, { name: "Kazakhstan", strength: 7 }, { name: "Kyrgyzstan", strength: 7 }],
             potentialThreats: [],
         },
     },
@@ -5767,7 +5766,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -5920,7 +5919,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "Egypt", strength: 5}, {name: "Saudi Arabia", strength: 5}, {name: "United Arab Emirates", strength: 5}, {name: "Iraq", strength: 5}, {name: "Syria", strength: 5}, {name: "Jordan", strength: 5}, {name: "Libya", strength: 5}, {name: "Sudan", strength: 5}, {name: "Algeria", strength: 5}, {name: "Morocco", strength: 5}],
+            allies: [{ name: "Egypt", strength: 5 }, { name: "Saudi Arabia", strength: 5 }, { name: "United Arab Emirates", strength: 5 }, { name: "Iraq", strength: 5 }, { name: "Syria", strength: 5 }, { name: "Jordan", strength: 5 }, { name: "Libya", strength: 5 }, { name: "Sudan", strength: 5 }, { name: "Algeria", strength: 5 }, { name: "Morocco", strength: 5 }],
             potentialThreats: [],
         },
     },
@@ -6022,7 +6021,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -6532,7 +6531,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -6940,7 +6939,7 @@ export const mockCountries: CountryData[] = [
             bombers: 0,
         },
         relations: {
-            allies: [{name: "United States", strength: 10}, {name: "United Kingdom", strength: 10}, {name: "France", strength: 10}, {name: "Germany", strength: 10}, {name: "Italy", strength: 10}, {name: "Spain", strength: 10}, {name: "Canada", strength: 10}, {name: "Poland", strength: 10}, {name: "Netherlands", strength: 10}, {name: "Belgium", strength: 10}],
+            allies: [{ name: "United States", strength: 10 }, { name: "United Kingdom", strength: 10 }, { name: "France", strength: 10 }, { name: "Germany", strength: 10 }, { name: "Italy", strength: 10 }, { name: "Spain", strength: 10 }, { name: "Canada", strength: 10 }, { name: "Poland", strength: 10 }, { name: "Netherlands", strength: 10 }, { name: "Belgium", strength: 10 }],
             potentialThreats: [],
         },
     },
@@ -7469,22 +7468,22 @@ export function getCountryByName(name: string): CountryData | undefined {
 }
 
 export function getRelatedCountries(country: CountryData): {
-    allies: CountryData[];
-    threats: CountryData[];
+    allies: (CountryData & { relationStrength: number })[];
+    threats: (CountryData & { relationStrength: number })[];
 } {
     const allies = country.relations.allies
         .map((ally) => {
             const found = getCountryByName(ally.name);
-            return found ? {...found, relationStrength: ally.strength} : null;
+            return found ? { ...found, relationStrength: ally.strength } : null;
         })
-        .filter((c): c is CountryData => c !== null);
+        .filter((c): c is CountryData & { relationStrength: number } => c !== null);
 
     const threats = country.relations.potentialThreats
         .map((threat) => {
             const found = getCountryByName(threat.name);
-            return found ? {...found, relationStrength: threat.strength} : null;
+            return found ? { ...found, relationStrength: threat.strength } : null;
         })
-        .filter((c): c is CountryData => c !== null);
+        .filter((c): c is CountryData & { relationStrength: number } => c !== null);
 
     return { allies, threats };
 }

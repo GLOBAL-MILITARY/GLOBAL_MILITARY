@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, TrendingUp, TrendingDown, Minus, Search, Swords } from "lucide-react";
@@ -8,7 +8,7 @@ import { getAllCountries, getCountryById } from "@/lib/mockData";
 import RadarChart from "@/components/RadarChart";
 import Footer from "@/components/Footer";
 
-export default function ComparePage() {
+function ComparePageContent() {
     const searchParams = useSearchParams();
     const targetId = searchParams.get("target");
 
@@ -502,5 +502,13 @@ export default function ComparePage() {
             </main>
 
         </>
+    );
+}
+
+export default function ComparePage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center"><div className="text-white">Loading...</div></div>}>
+            <ComparePageContent />
+        </Suspense>
     );
 }

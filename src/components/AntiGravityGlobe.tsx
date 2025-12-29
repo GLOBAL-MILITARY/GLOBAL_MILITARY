@@ -176,7 +176,7 @@ const RotatingGlobe = ({ onHover, onClick }: { onHover: (iso: string | null, x: 
                 // @ts-ignore
                 const featureCollection = topojson.feature(data, data.objects.countries);
                 // Ensure we get an array of features
-                const parsedFeatures = featureCollection.features || [featureCollection];
+                const parsedFeatures = (featureCollection as any).features || [featureCollection];
                 console.log("TopoJSON Features Loaded:", parsedFeatures.length);
                 setFeatures(parsedFeatures);
             })
@@ -255,7 +255,7 @@ const RotatingGlobe = ({ onHover, onClick }: { onHover: (iso: string | null, x: 
         const point = event.point;
         const localPoint = meshRef.current.worldToLocal(point.clone());
         const { lat, lon } = vector3ToLatLon(localPoint);
-        const clickCoords = [lon, lat];
+        const clickCoords: [number, number] = [lon, lat];
 
         console.log("Click Coords:", clickCoords);
 

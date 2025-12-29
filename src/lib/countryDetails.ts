@@ -1013,30 +1013,6 @@ export const countryDetails: Record<string, CountryDetail> = {
         population: "8,800,000",
         gdp: "$9.17 billion"
     },
-    "PAN": {
-        id: "PAN",
-        description: "Panama, officially the Republic of Panama, is a transcontinental country in Central America and South America, bordered by Costa Rica to the west, Colombia to the southeast, the Caribbean Sea to the north, and the Pacific Ocean to the south. It is home to the Panama Canal, a famous feat of human engineering. Panama City is the capital and largest city.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Flag_of_Panama.svg/500px-Flag_of_Panama.svg.png",
-        capital: "Panama City",
-        population: "4,458,759",
-        gdp: "$83.318 billion"
-    },
-    "MAD": {
-        id: "MAD",
-        description: "Madagascar, officially the Republic of Madagascar, is an island country in the Indian Ocean, approximately 400 kilometres (250 miles) off the coast of East Africa. It is the world's fourth-largest island. The nation comprises the island of Madagascar and numerous smaller peripheral islands. Following the prehistoric breakup of the supercontinent Gondwana, Madagascar split from the Indian subcontinent around 88 million years ago, allowing native plants and animals to evolve in relative isolation.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Madagascar.svg/500px-Flag_of_Madagascar.svg.png",
-        capital: "Antananarivo",
-        population: "30,300,000",
-        gdp: "$16.03 billion"
-    },
-    "MOL": {
-        id: "MOL",
-        description: "Moldova, officially the Republic of Moldova, is a landlocked country in Eastern Europe. It is bordered by Romania to the west and Ukraine to the north, east, and south. The capital and largest city is Chișinău. Most of Moldovan territory was a part of the Principality of Moldavia from the 14th century until 1812, when it was ceded to the Russian Empire by the Ottoman Empire.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Flag_of_Moldova.svg/500px-Flag_of_Moldova.svg.png",
-        capital: "Chișinău",
-        population: "2,380,000",
-        gdp: "$15.54 billion"
-    },
 
     "CAR": {
         id: "CAR",
@@ -1109,30 +1085,6 @@ export const countryDetails: Record<string, CountryDetail> = {
         capital: "Port-au-Prince",
         population: "11,400,000",
         gdp: "$25.22 billion"
-    },
-    "LAT": {
-        id: "LAT",
-        description: "Latvia, officially the Republic of Latvia, is a country in the Baltic region of Northern Europe. It borders Estonia, Lithuania, Russia, and Belarus. Riga is the capital. It is a member of the EU and NATO. It has a population of around 1.8 million.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Latvia.svg/500px-Flag_of_Latvia.svg.png",
-        capital: "Riga",
-        population: "1,800,000",
-        gdp: "$43.52 billion"
-    },
-    "EST": {
-        id: "EST",
-        description: "Estonia, officially the Republic of Estonia, is a country in Northern Europe. It borders Finland, Sweden, Latvia, and Russia. Tallinn is the capital. It is known for its advanced digital society. It has a population of around 1.4 million.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_Estonia.svg/500px-Flag_of_Estonia.svg.png",
-        capital: "Tallinn",
-        population: "1,400,000",
-        gdp: "$42.76 billion"
-    },
-    "LIT": {
-        id: "LIT",
-        description: "Lithuania, officially the Republic of Lithuania, is a country in the Baltic region of Europe. It is one of three Baltic states and lies on the eastern shore of the Baltic Sea. It shares land borders with Latvia to the north, Belarus to the east and south, Poland to the south, and Russia to the southwest. Vilnius is the capital and largest city.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Lithuania.svg/500px-Flag_of_Lithuania.svg.png",
-        capital: "Vilnius",
-        population: "2,886,500",
-        gdp: "$79.79 billion"
     },
     "TRI": {
         id: "TRI",

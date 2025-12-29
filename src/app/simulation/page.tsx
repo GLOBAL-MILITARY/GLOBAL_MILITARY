@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, Crosshair, Skull, Trophy, AlertTriangle, Swords, Play, Ship, Plane } from "lucide-react";
@@ -84,7 +84,7 @@ const DOCTRINE_INFO: Record<MilitaryDoctrine, { label: string; icon: any; color:
     "ASYMMETRIC": { label: "Asymmetric / Guerilla", icon: AlertTriangle, color: "text-red-400", desc: "Unpredictable critical hits" }
 };
 
-export default function SimulationPage() {
+function SimulationPageContent() {
     const searchParams = useSearchParams();
 
     const [country1Id, setCountry1Id] = useState<string>(searchParams.get("init") || "");
@@ -611,5 +611,13 @@ export default function SimulationPage() {
             </main>
 
         </>
+    );
+}
+
+export default function SimulationPage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center"><div className="text-white">Loading...</div></div>}>
+            <SimulationPageContent />
+        </Suspense>
     );
 }

@@ -14,6 +14,13 @@ import { countryDetails } from "@/lib/countryDetails";
 import { allCountriesRanking } from "@/lib/rankingData";
 import CountryDetailClient from "./CountryDetailClient";
 
+// Generate static params for all countries
+export async function generateStaticParams() {
+    return allCountriesRanking.map((country) => ({
+        id: country.id.toLowerCase(),
+    }));
+}
+
 export default async function CountryDetailPage({
     params,
 }: {

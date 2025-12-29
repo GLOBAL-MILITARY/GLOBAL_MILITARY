@@ -1,0 +1,2930 @@
+{
+  "United States": {
+    "allies": [
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": [
+      {
+        "name": "North Korea",
+        "strength": 9
+      },
+      {
+        "name": "Iran",
+        "strength": 8
+      },
+      {
+        "name": "China",
+        "strength": 7
+      },
+      {
+        "name": "Russia",
+        "strength": 7
+      }
+    ]
+  },
+  "Russia": {
+    "allies": [
+      {
+        "name": "Belarus",
+        "strength": 9
+      },
+      {
+        "name": "Armenia",
+        "strength": 9
+      },
+      {
+        "name": "Kazakhstan",
+        "strength": 9
+      },
+      {
+        "name": "Kyrgyzstan",
+        "strength": 9
+      },
+      {
+        "name": "Tajikistan",
+        "strength": 9
+      },
+      {
+        "name": "China",
+        "strength": 7
+      }
+    ],
+    "threats": [
+      {
+        "name": "Ukraine",
+        "strength": 10
+      },
+      {
+        "name": "United States",
+        "strength": 7
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 6
+      },
+      {
+        "name": "Poland",
+        "strength": 6
+      }
+    ]
+  },
+  "China": {
+    "allies": [
+      {
+        "name": "Pakistan",
+        "strength": 9
+      },
+      {
+        "name": "North Korea",
+        "strength": 8
+      },
+      {
+        "name": "Russia",
+        "strength": 7
+      },
+      {
+        "name": "Iran",
+        "strength": 7
+      },
+      {
+        "name": "Cambodia",
+        "strength": 7
+      },
+      {
+        "name": "Belarus",
+        "strength": 6
+      },
+      {
+        "name": "Myanmar",
+        "strength": 6
+      }
+    ],
+    "threats": [
+      {
+        "name": "Taiwan",
+        "strength": 9
+      },
+      {
+        "name": "United States",
+        "strength": 7
+      },
+      {
+        "name": "India",
+        "strength": 7
+      },
+      {
+        "name": "Japan",
+        "strength": 6
+      }
+    ]
+  },
+  "India": {
+    "allies": [],
+    "threats": [
+      {
+        "name": "Pakistan",
+        "strength": 10
+      },
+      {
+        "name": "China",
+        "strength": 7
+      }
+    ]
+  },
+  "South Korea": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      }
+    ],
+    "threats": [
+      {
+        "name": "North Korea",
+        "strength": 10
+      }
+    ]
+  },
+  "United Kingdom": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "France": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Japan": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      }
+    ],
+    "threats": [
+      {
+        "name": "North Korea",
+        "strength": 8
+      },
+      {
+        "name": "China",
+        "strength": 6
+      }
+    ]
+  },
+  "Turkiye": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": [
+      {
+        "name": "Syria",
+        "strength": 6
+      },
+      {
+        "name": "Greece",
+        "strength": 5
+      }
+    ]
+  },
+  "Italy": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Brazil": {
+    "allies": [],
+    "threats": []
+  },
+  "Pakistan": {
+    "allies": [
+      {
+        "name": "China",
+        "strength": 9
+      }
+    ],
+    "threats": [
+      {
+        "name": "India",
+        "strength": 10
+      }
+    ]
+  },
+  "Indonesia": {
+    "allies": [],
+    "threats": []
+  },
+  "Germany": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Israel": {
+    "allies": [],
+    "threats": [
+      {
+        "name": "Iran",
+        "strength": 9
+      },
+      {
+        "name": "Syria",
+        "strength": 8
+      },
+      {
+        "name": "Lebanon",
+        "strength": 7
+      }
+    ]
+  },
+  "Iran": {
+    "allies": [
+      {
+        "name": "China",
+        "strength": 7
+      }
+    ],
+    "threats": [
+      {
+        "name": "Israel",
+        "strength": 9
+      },
+      {
+        "name": "United States",
+        "strength": 8
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 7
+      }
+    ]
+  },
+  "Spain": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Australia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "New Zealand",
+        "strength": 10
+      },
+      {
+        "name": "United States",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Egypt": {
+    "allies": [
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Ukraine": {
+    "allies": [],
+    "threats": [
+      {
+        "name": "Russia",
+        "strength": 10
+      }
+    ]
+  },
+  "Poland": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Taiwan": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 9
+      }
+    ],
+    "threats": []
+  },
+  "Vietnam": {
+    "allies": [],
+    "threats": [
+      {
+        "name": "China",
+        "strength": 5
+      }
+    ]
+  },
+  "Saudi Arabia": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": [
+      {
+        "name": "Iran",
+        "strength": 7
+      },
+      {
+        "name": "Yemen",
+        "strength": 6
+      }
+    ]
+  },
+  "Thailand": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 8
+      }
+    ],
+    "threats": []
+  },
+  "Algeria": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Sweden": {
+    "allies": [],
+    "threats": []
+  },
+  "Canada": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Singapore": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 8
+      }
+    ],
+    "threats": []
+  },
+  "Greece": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": [
+      {
+        "name": "Turkiye",
+        "strength": 5
+      }
+    ]
+  },
+  "Nigeria": {
+    "allies": [],
+    "threats": []
+  },
+  "Mexico": {
+    "allies": [],
+    "threats": []
+  },
+  "Argentina": {
+    "allies": [],
+    "threats": []
+  },
+  "North Korea": {
+    "allies": [
+      {
+        "name": "China",
+        "strength": 8
+      }
+    ],
+    "threats": [
+      {
+        "name": "South Korea",
+        "strength": 10
+      },
+      {
+        "name": "United States",
+        "strength": 9
+      },
+      {
+        "name": "Japan",
+        "strength": 8
+      }
+    ]
+  },
+  "Bangladesh": {
+    "allies": [],
+    "threats": []
+  },
+  "Netherlands": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Myanmar": {
+    "allies": [
+      {
+        "name": "China",
+        "strength": 6
+      }
+    ],
+    "threats": []
+  },
+  "Norway": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Portugal": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "South Africa": {
+    "allies": [],
+    "threats": []
+  },
+  "Philippines": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 9
+      }
+    ],
+    "threats": []
+  },
+  "Malaysia": {
+    "allies": [],
+    "threats": []
+  },
+  "Iraq": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Switzerland": {
+    "allies": [],
+    "threats": []
+  },
+  "Denmark": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Colombia": {
+    "allies": [],
+    "threats": []
+  },
+  "Chile": {
+    "allies": [],
+    "threats": []
+  },
+  "Finland": {
+    "allies": [],
+    "threats": []
+  },
+  "Peru": {
+    "allies": [],
+    "threats": []
+  },
+  "Venezuela": {
+    "allies": [],
+    "threats": []
+  },
+  "Romania": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Ethiopia": {
+    "allies": [],
+    "threats": []
+  },
+  "Czechia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "United Arab Emirates": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Hungary": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Angola": {
+    "allies": [],
+    "threats": []
+  },
+  "Kazakhstan": {
+    "allies": [
+      {
+        "name": "Russia",
+        "strength": 9
+      },
+      {
+        "name": "Belarus",
+        "strength": 7
+      },
+      {
+        "name": "Armenia",
+        "strength": 7
+      },
+      {
+        "name": "Kyrgyzstan",
+        "strength": 7
+      },
+      {
+        "name": "Tajikistan",
+        "strength": 7
+      }
+    ],
+    "threats": []
+  },
+  "Uzbekistan": {
+    "allies": [],
+    "threats": []
+  },
+  "Morocco": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Azerbaijan": {
+    "allies": [],
+    "threats": [
+      {
+        "name": "Armenia",
+        "strength": 9
+      }
+    ]
+  },
+  "Belgium": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Greece",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Bulgaria": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Serbia": {
+    "allies": [],
+    "threats": []
+  },
+  "Syria": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Ecuador": {
+    "allies": [],
+    "threats": []
+  },
+  "Democratic Republic of the Congo": {
+    "allies": [],
+    "threats": []
+  },
+  "Cuba": {
+    "allies": [],
+    "threats": []
+  },
+  "Austria": {
+    "allies": [],
+    "threats": []
+  },
+  "Sri Lanka": {
+    "allies": [],
+    "threats": []
+  },
+  "Belarus": {
+    "allies": [
+      {
+        "name": "Russia",
+        "strength": 9
+      },
+      {
+        "name": "Armenia",
+        "strength": 7
+      },
+      {
+        "name": "Kazakhstan",
+        "strength": 7
+      },
+      {
+        "name": "Kyrgyzstan",
+        "strength": 7
+      },
+      {
+        "name": "Tajikistan",
+        "strength": 7
+      },
+      {
+        "name": "China",
+        "strength": 6
+      }
+    ],
+    "threats": []
+  },
+  "Slovakia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Qatar": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Sudan": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Croatia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Jordan": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Libya": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      },
+      {
+        "name": "Tunisia",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Turkmenistan": {
+    "allies": [],
+    "threats": []
+  },
+  "Albania": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Kuwait": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Bolivia": {
+    "allies": [],
+    "threats": []
+  },
+  "Bahrain": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Oman": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Kenya": {
+    "allies": [],
+    "threats": []
+  },
+  "Chad": {
+    "allies": [],
+    "threats": []
+  },
+  "Yemen": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "New Zealand": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Australia",
+        "strength": 10
+      },
+      {
+        "name": "United States",
+        "strength": 9
+      }
+    ],
+    "threats": []
+  },
+  "Paraguay": {
+    "allies": [],
+    "threats": []
+  },
+  "Lithuania": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Mozambique": {
+    "allies": [],
+    "threats": []
+  },
+  "Tunisia": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Armenia": {
+    "allies": [
+      {
+        "name": "Russia",
+        "strength": 9
+      },
+      {
+        "name": "Belarus",
+        "strength": 7
+      },
+      {
+        "name": "Kazakhstan",
+        "strength": 7
+      },
+      {
+        "name": "Kyrgyzstan",
+        "strength": 7
+      },
+      {
+        "name": "Tajikistan",
+        "strength": 7
+      }
+    ],
+    "threats": [
+      {
+        "name": "Azerbaijan",
+        "strength": 9
+      }
+    ]
+  },
+  "Tanzania": {
+    "allies": [],
+    "threats": []
+  },
+  "Cameroon": {
+    "allies": [],
+    "threats": []
+  },
+  "Georgia": {
+    "allies": [],
+    "threats": []
+  },
+  "Cambodia": {
+    "allies": [
+      {
+        "name": "China",
+        "strength": 7
+      }
+    ],
+    "threats": []
+  },
+  "Slovenia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Ireland": {
+    "allies": [],
+    "threats": []
+  },
+  "Mongolia": {
+    "allies": [],
+    "threats": []
+  },
+  "Latvia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Uruguay": {
+    "allies": [],
+    "threats": []
+  },
+  "Honduras": {
+    "allies": [],
+    "threats": []
+  },
+  "Ivory Coast": {
+    "allies": [],
+    "threats": []
+  },
+  "Guatemala": {
+    "allies": [],
+    "threats": []
+  },
+  "Mali": {
+    "allies": [],
+    "threats": []
+  },
+  "Kyrgyzstan": {
+    "allies": [
+      {
+        "name": "Russia",
+        "strength": 9
+      },
+      {
+        "name": "Belarus",
+        "strength": 7
+      },
+      {
+        "name": "Armenia",
+        "strength": 7
+      },
+      {
+        "name": "Kazakhstan",
+        "strength": 7
+      },
+      {
+        "name": "Tajikistan",
+        "strength": 7
+      }
+    ],
+    "threats": []
+  },
+  "Laos": {
+    "allies": [],
+    "threats": []
+  },
+  "Estonia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Tajikistan": {
+    "allies": [
+      {
+        "name": "Russia",
+        "strength": 9
+      },
+      {
+        "name": "Belarus",
+        "strength": 7
+      },
+      {
+        "name": "Armenia",
+        "strength": 7
+      },
+      {
+        "name": "Kazakhstan",
+        "strength": 7
+      },
+      {
+        "name": "Kyrgyzstan",
+        "strength": 7
+      }
+    ],
+    "threats": []
+  },
+  "Zambia": {
+    "allies": [],
+    "threats": []
+  },
+  "Ghana": {
+    "allies": [],
+    "threats": []
+  },
+  "Zimbabwe": {
+    "allies": [],
+    "threats": []
+  },
+  "North Macedonia": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "South Sudan": {
+    "allies": [],
+    "threats": []
+  },
+  "Uganda": {
+    "allies": [],
+    "threats": []
+  },
+  "Lebanon": {
+    "allies": [
+      {
+        "name": "Egypt",
+        "strength": 5
+      },
+      {
+        "name": "Saudi Arabia",
+        "strength": 5
+      },
+      {
+        "name": "United Arab Emirates",
+        "strength": 5
+      },
+      {
+        "name": "Iraq",
+        "strength": 5
+      },
+      {
+        "name": "Syria",
+        "strength": 5
+      },
+      {
+        "name": "Jordan",
+        "strength": 5
+      },
+      {
+        "name": "Libya",
+        "strength": 5
+      },
+      {
+        "name": "Sudan",
+        "strength": 5
+      },
+      {
+        "name": "Algeria",
+        "strength": 5
+      },
+      {
+        "name": "Morocco",
+        "strength": 5
+      }
+    ],
+    "threats": []
+  },
+  "Namibia": {
+    "allies": [],
+    "threats": []
+  },
+  "Luxembourg": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Afghanistan": {
+    "allies": [],
+    "threats": []
+  },
+  "Niger": {
+    "allies": [],
+    "threats": []
+  },
+  "Eritrea": {
+    "allies": [],
+    "threats": []
+  },
+  "Republic of the Congo": {
+    "allies": [],
+    "threats": []
+  },
+  "Botswana": {
+    "allies": [],
+    "threats": []
+  },
+  "Mauritania": {
+    "allies": [],
+    "threats": []
+  },
+  "Dominican Republic": {
+    "allies": [],
+    "threats": []
+  },
+  "Senegal": {
+    "allies": [],
+    "threats": []
+  },
+  "Nepal": {
+    "allies": [],
+    "threats": []
+  },
+  "Montenegro": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "El Salvador": {
+    "allies": [],
+    "threats": []
+  },
+  "Burkina Faso": {
+    "allies": [],
+    "threats": []
+  },
+  "Madagascar": {
+    "allies": [],
+    "threats": []
+  },
+  "Nicaragua": {
+    "allies": [],
+    "threats": []
+  },
+  "Bosnia and Herzegovina": {
+    "allies": [],
+    "threats": []
+  },
+  "Gabon": {
+    "allies": [],
+    "threats": []
+  },
+  "Moldova": {
+    "allies": [],
+    "threats": []
+  },
+  "Iceland": {
+    "allies": [
+      {
+        "name": "United States",
+        "strength": 10
+      },
+      {
+        "name": "United Kingdom",
+        "strength": 10
+      },
+      {
+        "name": "France",
+        "strength": 10
+      },
+      {
+        "name": "Germany",
+        "strength": 10
+      },
+      {
+        "name": "Italy",
+        "strength": 10
+      },
+      {
+        "name": "Spain",
+        "strength": 10
+      },
+      {
+        "name": "Canada",
+        "strength": 10
+      },
+      {
+        "name": "Poland",
+        "strength": 10
+      },
+      {
+        "name": "Netherlands",
+        "strength": 10
+      },
+      {
+        "name": "Belgium",
+        "strength": 10
+      }
+    ],
+    "threats": []
+  },
+  "Panama": {
+    "allies": [],
+    "threats": []
+  },
+  "Belize": {
+    "allies": [],
+    "threats": []
+  },
+  "Liberia": {
+    "allies": [],
+    "threats": []
+  },
+  "Suriname": {
+    "allies": [],
+    "threats": []
+  },
+  "Sierra Leone": {
+    "allies": [],
+    "threats": []
+  },
+  "Kosovo": {
+    "allies": [],
+    "threats": []
+  },
+  "Somalia": {
+    "allies": [],
+    "threats": []
+  },
+  "Central African Republic": {
+    "allies": [],
+    "threats": []
+  },
+  "Benin": {
+    "allies": [],
+    "threats": []
+  },
+  "Bhutan": {
+    "allies": [],
+    "threats": []
+  }
+}

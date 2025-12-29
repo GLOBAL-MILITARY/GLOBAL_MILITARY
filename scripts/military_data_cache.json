@@ -1,0 +1,5512 @@
+{
+  "USA": {
+    "army": {
+      "activePersonnel": 1333030,
+      "reservePersonnel": 799500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 16,
+      "attackAircraft": 10,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 5044
+    }
+  },
+  "RUS": {
+    "army": {
+      "activePersonnel": 12690355,
+      "reservePersonnel": 2022,
+      "tanks": 200,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 20,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 20,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 5580
+    }
+  },
+  "CHN": {
+    "army": {
+      "activePersonnel": 12690355,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 500
+    }
+  },
+  "IND": {
+    "army": {
+      "activePersonnel": 1431000,
+      "reservePersonnel": 1000000,
+      "tanks": 4614,
+      "afv": 0,
+      "selfPropelledArtillery": 140,
+      "towedArtillery": 3243,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 78,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 137,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 2,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 17,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 172
+    }
+  },
+  "SKO": {
+    "army": {
+      "activePersonnel": 450000,
+      "reservePersonnel": 3100000,
+      "tanks": 5850,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 150,
+      "aircraftCarriers": 0,
+      "submarines": 214,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 2,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "UKD": {
+    "army": {
+      "activePersonnel": 2801120,
+      "reservePersonnel": 31967,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 64,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 45,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 225
+    }
+  },
+  "FRA": {
+    "army": {
+      "activePersonnel": 2662406,
+      "reservePersonnel": 0,
+      "tanks": 150,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 150,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 600,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 290
+    }
+  },
+  "JPN": {
+    "army": {
+      "activePersonnel": 251500,
+      "reservePersonnel": 56000,
+      "tanks": 260,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 120,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 85,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 20,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TKY": {
+    "army": {
+      "activePersonnel": 36500,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ITA": {
+    "army": {
+      "activePersonnel": 165500,
+      "reservePersonnel": 18300,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 184,
+      "aircraftCarriers": 0,
+      "submarines": 212,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BRA": {
+    "army": {
+      "activePersonnel": 376000,
+      "reservePersonnel": 1340000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "PAK": {
+    "army": {
+      "activePersonnel": 660000,
+      "reservePersonnel": 550000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 250,
+      "fighters": 17,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 200,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 170
+    }
+  },
+  "INO": {
+    "army": {
+      "activePersonnel": 404500,
+      "reservePersonnel": 401000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 202,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 123,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GER": {
+    "army": {
+      "activePersonnel": 182496,
+      "reservePersonnel": 860000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ISR": {
+    "army": {
+      "activePersonnel": 169500,
+      "reservePersonnel": 465000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 270
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 90
+    }
+  },
+  "IRN": {
+    "army": {
+      "activePersonnel": 610000,
+      "reservePersonnel": 350000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SPN": {
+    "army": {
+      "activePersonnel": 51000,
+      "reservePersonnel": 252500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 16,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "AUS": {
+    "army": {
+      "activePersonnel": 58909,
+      "reservePersonnel": 33269,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 76,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "EGY": {
+    "army": {
+      "activePersonnel": 438500,
+      "reservePersonnel": 479000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 209,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 220,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "UKR": {
+    "army": {
+      "activePersonnel": 900000,
+      "reservePersonnel": 4000000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 350,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "POL": {
+    "army": {
+      "activePersonnel": 100000,
+      "reservePersonnel": 350000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TWN": {
+    "army": {
+      "activePersonnel": 150000,
+      "reservePersonnel": 1657000,
+      "tanks": 1100,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 26
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 4,
+      "frigates": 22,
+      "corvettes": 12,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 400,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 19,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "VET": {
+    "army": {
+      "activePersonnel": 1242544,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SAR": {
+    "army": {
+      "activePersonnel": 247000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 110,
+      "towedArtillery": 0,
+      "rocketProjectors": 200
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 19,
+      "attackHelicopters": 12,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "THL": {
+    "army": {
+      "activePersonnel": 360850,
+      "reservePersonnel": 200000,
+      "tanks": 0,
+      "afv": 85,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ALG": {
+    "army": {
+      "activePersonnel": 130000,
+      "reservePersonnel": 150000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SWE": {
+    "army": {
+      "activePersonnel": 25600,
+      "reservePersonnel": 34000,
+      "tanks": 121,
+      "afv": 0,
+      "selfPropelledArtillery": 26,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 387,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 210,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 3,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CAN": {
+    "army": {
+      "activePersonnel": 63500,
+      "reservePersonnel": 23000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 440,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SNG": {
+    "army": {
+      "activePersonnel": 51000,
+      "reservePersonnel": 252500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 16,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GRE": {
+    "army": {
+      "activePersonnel": 142700,
+      "reservePersonnel": 221350,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NGA": {
+    "army": {
+      "activePersonnel": 230000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MEX": {
+    "army": {
+      "activePersonnel": 387000,
+      "reservePersonnel": 98653,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ARG": {
+    "army": {
+      "activePersonnel": 166306,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 3,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NKO": {
+    "army": {
+      "activePersonnel": 1320000,
+      "reservePersonnel": 560000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 500,
+      "aircraftCarriers": 0,
+      "submarines": 40,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 1852,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": true,
+      "stockpile": 50
+    }
+  },
+  "BNG": {
+    "army": {
+      "activePersonnel": 204000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 130,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 17,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NTH": {
+    "army": {
+      "activePersonnel": 44245,
+      "reservePersonnel": 8510,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 24,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 16,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MYA": {
+    "army": {
+      "activePersonnel": 148478,
+      "reservePersonnel": 18998,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 122,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 3,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NOR": {
+    "army": {
+      "activePersonnel": 33440,
+      "reservePersonnel": 40500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "POR": {
+    "army": {
+      "activePersonnel": 24000,
+      "reservePersonnel": 0,
+      "tanks": 37,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 40,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 1,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 6,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SAF": {
+    "army": {
+      "activePersonnel": 145158,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 195,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "PHL": {
+    "army": {
+      "activePersonnel": 160000,
+      "reservePersonnel": 1500000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MLY": {
+    "army": {
+      "activePersonnel": 113000,
+      "reservePersonnel": 51600,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 130,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "IRQ": {
+    "army": {
+      "activePersonnel": 5000,
+      "reservePersonnel": 16000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 2
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 8,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SWZ": {
+    "army": {
+      "activePersonnel": 127080,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "DEN": {
+    "army": {
+      "activePersonnel": 123319,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "COL": {
+    "army": {
+      "activePersonnel": 429,
+      "reservePersonnel": 998,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CHI": {
+    "army": {
+      "activePersonnel": 119602,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "FIN": {
+    "army": {
+      "activePersonnel": 24000,
+      "reservePersonnel": 870000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 3,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 1,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "PER": {
+    "army": {
+      "activePersonnel": 120000,
+      "reservePersonnel": 386000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 209,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "VEN": {
+    "army": {
+      "activePersonnel": 109000,
+      "reservePersonnel": 8000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 6,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 35,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 26,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ROM": {
+    "army": {
+      "activePersonnel": 111308,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 22,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 35,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ETH": {
+    "army": {
+      "activePersonnel": 503000,
+      "reservePersonnel": 138000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CZC": {
+    "army": {
+      "activePersonnel": 100060,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "UAE": {
+    "army": {
+      "activePersonnel": 65000,
+      "reservePersonnel": 130000,
+      "tanks": 0,
+      "afv": 3,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 72,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 6,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "HUN": {
+    "army": {
+      "activePersonnel": 97475,
+      "reservePersonnel": 0,
+      "tanks": 2500,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ANG": {
+    "army": {
+      "activePersonnel": 107000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 22,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 16,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "KAZ": {
+    "army": {
+      "activePersonnel": 110000,
+      "reservePersonnel": 135000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 295,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 145,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "UZB": {
+    "army": {
+      "activePersonnel": 70000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MOR": {
+    "army": {
+      "activePersonnel": 400000,
+      "reservePersonnel": 250000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 300,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "AZR": {
+    "army": {
+      "activePersonnel": 128000,
+      "reservePersonnel": 306000,
+      "tanks": 220,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 106,
+      "fighters": 37,
+      "attackAircraft": 0,
+      "transports": 20,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 35,
+      "attackHelicopters": 15,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BEL": {
+    "army": {
+      "activePersonnel": 79592,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BUL": {
+    "army": {
+      "activePersonnel": 36950,
+      "reservePersonnel": 3000,
+      "tanks": 2400,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 4,
+      "destroyers": 0,
+      "frigates": 2,
+      "corvettes": 5,
+      "patrolVessels": 9,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 73,
+      "fighters": 300,
+      "attackAircraft": 0,
+      "transports": 40,
+      "trainers": 100,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SRB": {
+    "army": {
+      "activePersonnel": 114000,
+      "reservePersonnel": 400000,
+      "tanks": 1500,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 79
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SYR": {
+    "army": {
+      "activePersonnel": 100000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ECU": {
+    "army": {
+      "activePersonnel": 41250,
+      "reservePersonnel": 118000,
+      "tanks": 236,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 209,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 45,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 68,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "DRC": {
+    "army": {
+      "activePersonnel": 76271,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 23,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CUB": {
+    "army": {
+      "activePersonnel": 14325,
+      "reservePersonnel": 20100,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 30,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 21,
+      "fighters": 16,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "AST": {
+    "army": {
+      "activePersonnel": 2500000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SRL": {
+    "army": {
+      "activePersonnel": 346000,
+      "reservePersonnel": 90000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 9,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BLR": {
+    "army": {
+      "activePersonnel": 63000,
+      "reservePersonnel": 365400,
+      "tanks": 3108,
+      "afv": 2600,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 260,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 80,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SLK": {
+    "army": {
+      "activePersonnel": 20982,
+      "reservePersonnel": 500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 10,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "QTR": {
+    "army": {
+      "activePersonnel": 69895,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SDN": {
+    "army": {
+      "activePersonnel": 300000,
+      "reservePersonnel": 200000,
+      "tanks": 60,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 11
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 2,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CRO": {
+    "army": {
+      "activePersonnel": 14325,
+      "reservePersonnel": 20100,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 30,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 21,
+      "fighters": 16,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "JOR": {
+    "army": {
+      "activePersonnel": 61961,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LBY": {
+    "army": {
+      "activePersonnel": 2100,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 10000,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TKM": {
+    "army": {
+      "activePersonnel": 36500,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ALB": {
+    "army": {
+      "activePersonnel": 7500,
+      "reservePersonnel": 0,
+      "tanks": 59,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 600,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 4207,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 105,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "KUW": {
+    "army": {
+      "activePersonnel": 58885,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 800,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 15,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BOL": {
+    "army": {
+      "activePersonnel": 40,
+      "reservePersonnel": 40,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 173,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 4,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 2,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BAH": {
+    "army": {
+      "activePersonnel": 57313,
+      "reservePersonnel": 0,
+      "tanks": 3,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 400,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 16,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "OMA": {
+    "army": {
+      "activePersonnel": 2350,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 412,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "KEN": {
+    "army": {
+      "activePersonnel": 55141,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 5,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CHD": {
+    "army": {
+      "activePersonnel": 53441,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "YEM": {
+    "army": {
+      "activePersonnel": 66700,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 17,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NWZ": {
+    "army": {
+      "activePersonnel": 10037,
+      "reservePersonnel": 3281,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 51,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "PAR": {
+    "army": {
+      "activePersonnel": 15650,
+      "reservePersonnel": 168500,
+      "tanks": 4,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 17,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 35,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LIT": {
+    "army": {
+      "activePersonnel": 52424,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MOZ": {
+    "army": {
+      "activePersonnel": 11200,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 6,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 15,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TUN": {
+    "army": {
+      "activePersonnel": 51182,
+      "reservePersonnel": 0,
+      "tanks": 84,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 25,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 154,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ARM": {
+    "army": {
+      "activePersonnel": 70000,
+      "reservePersonnel": 210000,
+      "tanks": 316,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TNZ": {
+    "army": {
+      "activePersonnel": 9796,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CAM": {
+    "army": {
+      "activePersonnel": 38000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GEO": {
+    "army": {
+      "activePersonnel": 37000,
+      "reservePersonnel": 27000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 25,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CMB": {
+    "army": {
+      "activePersonnel": 9637,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SLN": {
+    "army": {
+      "activePersonnel": 20982,
+      "reservePersonnel": 500,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 10,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "IRE": {
+    "army": {
+      "activePersonnel": 7557,
+      "reservePersonnel": 1720,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 12,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MGL": {
+    "army": {
+      "activePersonnel": 35000,
+      "reservePersonnel": 230000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 8,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LAT": {
+    "army": {
+      "activePersonnel": 9413,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "URU": {
+    "army": {
+      "activePersonnel": 24000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "HON": {
+    "army": {
+      "activePersonnel": 52225,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 71,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "IVC": {
+    "army": {
+      "activePersonnel": 9175,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GUA": {
+    "army": {
+      "activePersonnel": 106114,
+      "reservePersonnel": 90000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 1,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MAL": {
+    "army": {
+      "activePersonnel": 40000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "KYR": {
+    "army": {
+      "activePersonnel": 23000,
+      "reservePersonnel": 300000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 21,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 39,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LAO": {
+    "army": {
+      "activePersonnel": 12769,
+      "reservePersonnel": 6000,
+      "tanks": 200,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 8,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "EST": {
+    "army": {
+      "activePersonnel": 8727,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "TJK": {
+    "army": {
+      "activePersonnel": 150000,
+      "reservePersonnel": 600000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 29,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 12,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ZAM": {
+    "army": {
+      "activePersonnel": 29000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GHA": {
+    "army": {
+      "activePersonnel": 63500,
+      "reservePersonnel": 23000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 440,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ZIM": {
+    "army": {
+      "activePersonnel": 29000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MAC": {
+    "army": {
+      "activePersonnel": 10011,
+      "reservePersonnel": 60000,
+      "tanks": 84,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 17,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SSD": {
+    "army": {
+      "activePersonnel": 185000,
+      "reservePersonnel": 0,
+      "tanks": 55,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 1600,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "UGA": {
+    "army": {
+      "activePersonnel": 33000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 17,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LEB": {
+    "army": {
+      "activePersonnel": 7697,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NAM": {
+    "army": {
+      "activePersonnel": 7580,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LUX": {
+    "army": {
+      "activePersonnel": 7571,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "AFG": {
+    "army": {
+      "activePersonnel": 170000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NGR": {
+    "army": {
+      "activePersonnel": 7493,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ERI": {
+    "army": {
+      "activePersonnel": 7411,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ROC": {
+    "army": {
+      "activePersonnel": 7330,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BOT": {
+    "army": {
+      "activePersonnel": 12000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 5,
+      "attackAircraft": 0,
+      "transports": 328,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MAU": {
+    "army": {
+      "activePersonnel": 31540,
+      "reservePersonnel": 66000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 337,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 15,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "DOM": {
+    "army": {
+      "activePersonnel": 89000,
+      "reservePersonnel": 189000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 10,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 75,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 25,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SEN": {
+    "army": {
+      "activePersonnel": 17000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NEP": {
+    "army": {
+      "activePersonnel": 6916,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MTN": {
+    "army": {
+      "activePersonnel": 2350,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 412,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ESL": {
+    "army": {
+      "activePersonnel": 25000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 72,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BKF": {
+    "army": {
+      "activePersonnel": 12000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 17,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 4,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MAD": {
+    "army": {
+      "activePersonnel": 6534,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "NIC": {
+    "army": {
+      "activePersonnel": 6458,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BOS": {
+    "army": {
+      "activePersonnel": 12769,
+      "reservePersonnel": 6000,
+      "tanks": 200,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 8,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "GAB": {
+    "army": {
+      "activePersonnel": 5000,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "MOL": {
+    "army": {
+      "activePersonnel": 6500,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 29,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "ICE": {
+    "army": {
+      "activePersonnel": 7557,
+      "reservePersonnel": 1720,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 12,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "PAN": {
+    "army": {
+      "activePersonnel": 63500,
+      "reservePersonnel": 23000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 440,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BLZ": {
+    "army": {
+      "activePersonnel": 5377,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "LIB": {
+    "army": {
+      "activePersonnel": 2100,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 10000,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SRN": {
+    "army": {
+      "activePersonnel": 5111,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SLE": {
+    "army": {
+      "activePersonnel": 5037,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "KOS": {
+    "army": {
+      "activePersonnel": 4000,
+      "reservePersonnel": 5000,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "SOM": {
+    "army": {
+      "activePersonnel": 4757,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "CAR": {
+    "army": {
+      "activePersonnel": 4722,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BEN": {
+    "army": {
+      "activePersonnel": 4750,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  },
+  "BUT": {
+    "army": {
+      "activePersonnel": 3128,
+      "reservePersonnel": 0,
+      "tanks": 0,
+      "afv": 0,
+      "selfPropelledArtillery": 0,
+      "towedArtillery": 0,
+      "rocketProjectors": 0
+    },
+    "navy": {
+      "totalShips": 0,
+      "aircraftCarriers": 0,
+      "submarines": 0,
+      "destroyers": 0,
+      "frigates": 0,
+      "corvettes": 0,
+      "patrolVessels": 0,
+      "merchantMarine": 0,
+      "majorPorts": 0
+    },
+    "airforce": {
+      "totalAircraft": 0,
+      "fighters": 0,
+      "attackAircraft": 0,
+      "transports": 0,
+      "trainers": 0,
+      "specialMission": 0,
+      "tankerFleet": 0,
+      "helicopters": 0,
+      "attackHelicopters": 0,
+      "bombers": 0
+    },
+    "nuclear": {
+      "hasNuclear": false,
+      "stockpile": 0
+    }
+  }
+}

@@ -1,0 +1,5367 @@
+{
+    "united-states-of-america": {
+        "slug": "united-states-of-america",
+        "name": "2025United States Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 3533,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "russia": {
+        "slug": "russia",
+        "name": "2025Russia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 2910,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "china": {
+        "slug": "china",
+        "name": "2025China Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 8314,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "india": {
+        "slug": "india",
+        "name": "2025India Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1859,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "south-korea": {
+        "slug": "south-korea",
+        "name": "2025South Korea Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 2149,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "united-kingdom": {
+        "slug": "united-kingdom",
+        "name": "2025United Kingdom Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 868,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "france": {
+        "slug": "france",
+        "name": "2025France Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 553,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "japan": {
+        "slug": "japan",
+        "name": "2025Japan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 5229,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "turkey": {
+        "slug": "turkey",
+        "name": "2025Turkiye Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1170,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "italy": {
+        "slug": "italy",
+        "name": "2025Italy Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1276,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "brazil": {
+        "slug": "brazil",
+        "name": "2025Brazil Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 888,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "pakistan": {
+        "slug": "pakistan",
+        "name": "2025Pakistan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 60,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "indonesia": {
+        "slug": "indonesia",
+        "name": "2025Indonesia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 11422,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "germany": {
+        "slug": "germany",
+        "name": "2025Germany Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 595,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "israel": {
+        "slug": "israel",
+        "name": "2025Israel Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 41,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "iran": {
+        "slug": "iran",
+        "name": "2025Iran Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 965,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "spain": {
+        "slug": "spain",
+        "name": "2025Spain Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 503,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "australia": {
+        "slug": "australia",
+        "name": "2025Australia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 604,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "egypt": {
+        "slug": "egypt",
+        "name": "2025Egypt Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 441,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ukraine": {
+        "slug": "ukraine",
+        "name": "2025Ukraine Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 410,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "poland": {
+        "slug": "poland",
+        "name": "2025Poland Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 152,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "taiwan": {
+        "slug": "taiwan",
+        "name": "2025Taiwan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 465,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "vietnam": {
+        "slug": "vietnam",
+        "name": "2025Vietnam Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1973,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "saudi-arabia": {
+        "slug": "saudi-arabia",
+        "name": "2025Saudi Arabia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 433,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "thailand": {
+        "slug": "thailand",
+        "name": "2025Thailand Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 884,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "algeria": {
+        "slug": "algeria",
+        "name": "2025Algeria Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 119,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "sweden": {
+        "slug": "sweden",
+        "name": "2025Sweden Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 361,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "canada": {
+        "slug": "canada",
+        "name": "2025Canada Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 716,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "singapore": {
+        "slug": "singapore",
+        "name": "2025Singapore Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 3202,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "greece": {
+        "slug": "greece",
+        "name": "2025Greece Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1215,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "nigeria": {
+        "slug": "nigeria",
+        "name": "2025Nigeria Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 928,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "mexico": {
+        "slug": "mexico",
+        "name": "2025Mexico Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 674,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "argentina": {
+        "slug": "argentina",
+        "name": "2025Argentina Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 201,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "north-korea": {
+        "slug": "north-korea",
+        "name": "2025North Korea Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 264,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bangladesh": {
+        "slug": "bangladesh",
+        "name": "2025Bangladesh Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 558,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "netherlands": {
+        "slug": "netherlands",
+        "name": "2025Netherlands Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1187,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "myanmar": {
+        "slug": "myanmar",
+        "name": "2025Myanmar Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 101,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "norway": {
+        "slug": "norway",
+        "name": "2025Norway Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1720,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "portugal": {
+        "slug": "portugal",
+        "name": "2025Portugal Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 996,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "south-africa": {
+        "slug": "south-africa",
+        "name": "2025South Africa Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 110,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "philippines": {
+        "slug": "philippines",
+        "name": "2025Philippines Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 2203,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "malaysia": {
+        "slug": "malaysia",
+        "name": "2025Malaysia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1750,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "iraq": {
+        "slug": "iraq",
+        "name": "2025Iraq Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 74,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "switzerland": {
+        "slug": "switzerland",
+        "name": "2025Switzerland Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 17,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "denmark": {
+        "slug": "denmark",
+        "name": "2025Denmark Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 715,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "colombia": {
+        "slug": "colombia",
+        "name": "2025Colombia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 153,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "chile": {
+        "slug": "chile",
+        "name": "2025Chile Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 249,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "finland": {
+        "slug": "finland",
+        "name": "2025Finland Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 282,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "peru": {
+        "slug": "peru",
+        "name": "2025Peru Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 111,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "venezuela": {
+        "slug": "venezuela",
+        "name": "2025Venezuela Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 272,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "romania": {
+        "slug": "romania",
+        "name": "2025Romania Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 127,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ethiopia": {
+        "slug": "ethiopia",
+        "name": "2025Ethiopia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 12,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "czech-republic": {
+        "slug": "czech-republic",
+        "name": "2025Czechia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "united-arab-emirates": {
+        "slug": "united-arab-emirates",
+        "name": "2025United Arab Emirates Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 655,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "hungary": {
+        "slug": "hungary",
+        "name": "2025Hungary Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "angola": {
+        "slug": "angola",
+        "name": "2025Angola Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 64,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "kazakhstan": {
+        "slug": "kazakhstan",
+        "name": "2025Kazakhstan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 122,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "uzbekistan": {
+        "slug": "uzbekistan",
+        "name": "2025Uzbekistan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "morocco": {
+        "slug": "morocco",
+        "name": "2025Morocco Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 94,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "azerbaijan": {
+        "slug": "azerbaijan",
+        "name": "2025Azerbaijan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 312,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "belgium": {
+        "slug": "belgium",
+        "name": "2025Belgium Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 198,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bulgaria": {
+        "slug": "bulgaria",
+        "name": "2025Bulgaria Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 78,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "serbia": {
+        "slug": "serbia",
+        "name": "2025Serbia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "syria": {
+        "slug": "syria",
+        "name": "2025Syria Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 24,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ecuador": {
+        "slug": "ecuador",
+        "name": "2025Ecuador Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 154,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "democratic-republic-of-the-congo": {
+        "slug": "democratic-republic-of-the-congo",
+        "name": "2025Democratic Republic of the Congo Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 24,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "cuba": {
+        "slug": "cuba",
+        "name": "2025Cuba Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 65,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "austria": {
+        "slug": "austria",
+        "name": "2025Austria Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "sri-lanka": {
+        "slug": "sri-lanka",
+        "name": "2025Sri Lanka Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 96,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "belarus": {
+        "slug": "belarus",
+        "name": "2025Belarus Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 4,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "slovakia": {
+        "slug": "slovakia",
+        "name": "2025Slovakia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "qatar": {
+        "slug": "qatar",
+        "name": "2025Qatar Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 123,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "sudan": {
+        "slug": "sudan",
+        "name": "2025Sudan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 14,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "croatia": {
+        "slug": "croatia",
+        "name": "2025Croatia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 384,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "jordan": {
+        "slug": "jordan",
+        "name": "2025Jordan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 34,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "libya": {
+        "slug": "libya",
+        "name": "2025Libya Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 96,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "turkmenistan": {
+        "slug": "turkmenistan",
+        "name": "2025Turkmenistan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 73,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "albania": {
+        "slug": "albania",
+        "name": "2025Albania Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 67,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "kuwait": {
+        "slug": "kuwait",
+        "name": "2025Kuwait Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 176,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bolivia": {
+        "slug": "bolivia",
+        "name": "2025Bolivia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 50,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bahrain": {
+        "slug": "bahrain",
+        "name": "2025Bahrain Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 184,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "oman": {
+        "slug": "oman",
+        "name": "2025Oman Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 57,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "kenya": {
+        "slug": "kenya",
+        "name": "2025Kenya Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 26,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "chad": {
+        "slug": "chad",
+        "name": "2025Chad Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "yemen": {
+        "slug": "yemen",
+        "name": "2025Yemen Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 30,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "new-zealand": {
+        "slug": "new-zealand",
+        "name": "2025New Zealand Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 117,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "paraguay": {
+        "slug": "paraguay",
+        "name": "2025Paraguay Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 108,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "lithuania": {
+        "slug": "lithuania",
+        "name": "2025Lithuania Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 59,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "mozambique": {
+        "slug": "mozambique",
+        "name": "2025Mozambique Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 36,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "tunisia": {
+        "slug": "tunisia",
+        "name": "2025Tunisia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 72,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "armenia": {
+        "slug": "armenia",
+        "name": "2025Armenia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "tanzania": {
+        "slug": "tanzania",
+        "name": "2025Tanzania Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 381,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "cameroon": {
+        "slug": "cameroon",
+        "name": "2025Cameroon Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 198,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "georgia": {
+        "slug": "georgia",
+        "name": "2025Georgia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 26,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "cambodia": {
+        "slug": "cambodia",
+        "name": "2025Cambodia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 195,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "slovenia": {
+        "slug": "slovenia",
+        "name": "2025Slovenia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 8,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ireland": {
+        "slug": "ireland",
+        "name": "2025Ireland Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 94,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "mongolia": {
+        "slug": "mongolia",
+        "name": "2025Mongolia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 318,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "latvia": {
+        "slug": "latvia",
+        "name": "2025Latvia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 83,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "uruguay": {
+        "slug": "uruguay",
+        "name": "2025Uruguay Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 58,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "honduras": {
+        "slug": "honduras",
+        "name": "2025Honduras Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 489,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ivory-coast": {
+        "slug": "ivory-coast",
+        "name": "2025Ivory Coast Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 25,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "guatemala": {
+        "slug": "guatemala",
+        "name": "2025Guatemala Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 9,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "mali": {
+        "slug": "mali",
+        "name": "2025Mali Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "kyrgyzstan": {
+        "slug": "kyrgyzstan",
+        "name": "2025Kyrgyzstan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "laos": {
+        "slug": "laos",
+        "name": "2025Laos Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 1,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "estonia": {
+        "slug": "estonia",
+        "name": "2025Estonia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 72,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "tajikistan": {
+        "slug": "tajikistan",
+        "name": "2025Tajikistan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "zambia": {
+        "slug": "zambia",
+        "name": "2025Zambia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 2,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "ghana": {
+        "slug": "ghana",
+        "name": "2025Ghana Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 52,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "zimbabwe": {
+        "slug": "zimbabwe",
+        "name": "2025Zimbabwe Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "north-macedonia": {
+        "slug": "north-macedonia",
+        "name": "2025North Macedonia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "south-sudan": {
+        "slug": "south-sudan",
+        "name": "2025South Sudan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "uganda": {
+        "slug": "uganda",
+        "name": "2025Uganda Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "lebanon": {
+        "slug": "lebanon",
+        "name": "2025Lebanon Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 51,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "namibia": {
+        "slug": "namibia",
+        "name": "2025Namibia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 15,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "luxembourg": {
+        "slug": "luxembourg",
+        "name": "2025Luxembourg Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 147,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "afghanistan": {
+        "slug": "afghanistan",
+        "name": "2025Afghanistan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "niger": {
+        "slug": "niger",
+        "name": "2025Niger Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "eritrea": {
+        "slug": "eritrea",
+        "name": "2025Eritrea Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 9,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "republic-of-the-congo": {
+        "slug": "republic-of-the-congo",
+        "name": "2025Republic of the Congo Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 11,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "botswana": {
+        "slug": "botswana",
+        "name": "2025Botswana Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "mauritania": {
+        "slug": "mauritania",
+        "name": "2025Mauritania Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 11,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "dominican-republic": {
+        "slug": "dominican-republic",
+        "name": "2025Dominican Republic Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 40,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "senegal": {
+        "slug": "senegal",
+        "name": "2025Senegal Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 36,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "nepal": {
+        "slug": "nepal",
+        "name": "2025Nepal Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "montenegro": {
+        "slug": "montenegro",
+        "name": "2025Montenegro Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 18,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "el-salvador": {
+        "slug": "el-salvador",
+        "name": "2025El Salvador Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 5,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "burkina-faso": {
+        "slug": "burkina-faso",
+        "name": "2025Burkina Faso Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "madagascar": {
+        "slug": "madagascar",
+        "name": "2025Madagascar Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 29,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "nicaragua": {
+        "slug": "nicaragua",
+        "name": "2025Nicaragua Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 5,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bosnia-and-herzegovina": {
+        "slug": "bosnia-and-herzegovina",
+        "name": "2025Bosnia and Herzegovina Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "gabon": {
+        "slug": "gabon",
+        "name": "2025Gabon Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 87,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "moldova": {
+        "slug": "moldova",
+        "name": "2025Moldova Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 75,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "iceland": {
+        "slug": "iceland",
+        "name": "2025Iceland Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 39,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "panama": {
+        "slug": "panama",
+        "name": "2025Panama Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 8174,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "beliz": {
+        "slug": "beliz",
+        "name": "2025Beliz Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 774,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "liberia": {
+        "slug": "liberia",
+        "name": "2025Liberia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 4821,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "suriname": {
+        "slug": "suriname",
+        "name": "2025Suriname Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 13,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "sierra-leone": {
+        "slug": "sierra-leone",
+        "name": "2025Sierra Leone Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 584,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "kosovo": {
+        "slug": "kosovo",
+        "name": "2025Kosovo Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "somalia": {
+        "slug": "somalia",
+        "name": "2025Somalia Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 4,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "central-african-republic": {
+        "slug": "central-african-republic",
+        "name": "2025Central African Republic Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "benin": {
+        "slug": "benin",
+        "name": "2025Benin Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 6,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    },
+    "bhutan": {
+        "slug": "bhutan",
+        "name": "2025Bhutan Military Strength",
+        "id": "",
+        "army": {
+            "activePersonnel": 0,
+            "reservePersonnel": 0,
+            "tanks": 0,
+            "afv": 0,
+            "selfPropelledArtillery": 0,
+            "towedArtillery": 0,
+            "rocketProjectors": 0
+        },
+        "navy": {
+            "totalShips": 0,
+            "aircraftCarriers": 0,
+            "submarines": 0,
+            "destroyers": 0,
+            "frigates": 0,
+            "corvettes": 0,
+            "patrolVessels": 0,
+            "merchantMarine": 0,
+            "majorPorts": 0
+        },
+        "airforce": {
+            "totalAircraft": 0,
+            "fighters": 0,
+            "attackAircraft": 0,
+            "transports": 0,
+            "trainers": 0,
+            "specialMission": 0,
+            "tankerFleet": 0,
+            "helicopters": 0,
+            "attackHelicopters": 0,
+            "bombers": 0
+        }
+    }
+}

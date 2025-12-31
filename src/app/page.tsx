@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Scale, ArrowRight, Crosshair } from "lucide-react";
 import AntiGravityGlobe from "@/components/AntiGravityGlobe";
 import RankingList from "@/components/RankingList";
-import NewsGrid from "@/components/NewsGrid";
 
 export default function Home() {
   return (
@@ -46,17 +45,6 @@ export default function Home() {
           <div className="max-w-3xl mx-auto">
             <RankingList />
           </div>
-        </div>
-
-        {/* News Section */}
-        <div className="space-y-8">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white flex items-center gap-2">
-              <span className="w-2 h-8 bg-red-500 rounded-full" />
-              Global Intelligence
-            </h2>
-          </div>
-          <NewsGrid />
         </div>
 
       </div>

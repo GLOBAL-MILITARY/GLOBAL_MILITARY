@@ -59,19 +59,26 @@ const getDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => 
 type MilitaryDoctrine = "LAND_DOMINANT" | "NAVAL_DOMINANT" | "AIR_DOMINANT" | "BALANCED" | "ASYMMETRIC";
 
 const getCountryDoctrine = (c: CountryData): MilitaryDoctrine => {
-    // Simple heuristic to determine doctrine based on unit composition
+    // Improved heuristic for more doctrine variety
 
-    // Asymmetric check: Weak power but high manpower (roughly)
+    // Asymmetric check: Weak power but high manpower
     if (c.powerIndex > 2.0 && c.army.activePersonnel > 200000) return "ASYMMETRIC";
 
-    const airScore = c.airforce.totalAircraft * 10;
-    const navalScore = c.navy.totalShips * 20 + (c.navy.aircraftCarriers * 5000);
-    // Normalize land score (tanks + artillery + manpower factor)
-    const landScore = (c.army.tanks * 5) + (c.army.rocketProjectors * 10) + (c.army.activePersonnel * 0.05);
+    // Use more balanced scoring to get better variety
+    const airScore = c.airforce.totalAircraft * 8 + (c.airforce.fighters * 12) + (c.airforce.attackHelicopters * 15);
+    const navalScore = c.navy.totalShips * 15 + (c.navy.aircraftCarriers * 3000) + (c.navy.submarines * 200) + (c.navy.destroyers * 100);
+    const landScore = (c.army.tanks * 8) + (c.army.rocketProjectors * 12) + (c.army.activePersonnel * 0.03) + (c.army.afv * 3);
 
-    if (airScore > landScore && airScore > navalScore) return "AIR_DOMINANT";
-    if (navalScore > landScore && navalScore > airScore) return "NAVAL_DOMINANT";
-    if (landScore > airScore && landScore > navalScore) return "LAND_DOMINANT";
+    // Add threshold for clearer distinction
+    const maxScore = Math.max(airScore, navalScore, landScore);
+    const secondMax = [airScore, navalScore, landScore].sort((a, b) => b - a)[1];
+
+    // If scores are too close, it's balanced
+    if (maxScore / (secondMax + 1) < 1.3) return "BALANCED";
+
+    if (airScore === maxScore) return "AIR_DOMINANT";
+    if (navalScore === maxScore) return "NAVAL_DOMINANT";
+    if (landScore === maxScore) return "LAND_DOMINANT";
 
     return "BALANCED";
 };
@@ -264,40 +271,42 @@ function SimulationPageContent() {
                     return;
                 }
 
-                // Nuclear Logic (Threshold: <= 50% HP)
+                // Nuclear Logic (Threshold: <= 40% HP, reduced damage for better gameplay)
                 if (useNuclear) {
-                    const damage = 30;
+                    const baseDamage = 25; // Reduced from 30 for better pacing
 
                     // Check Player 1 Trigger
-                    if (!hasNukeFired && country1.nuclear.hasNuclear && activeHp1 <= 50) {
+                    if (!hasNukeFired && country1.nuclear.hasNuclear && activeHp1 <= 40) {
                         hasNukeFired = true;
-                        activeHp2 = Math.max(0, activeHp2 - damage);
+                        activeHp2 = Math.max(0, activeHp2 - baseDamage);
                         setHp2(activeHp2);
                         addLog(`☢️ EMERGENCY: ${country1.name} HP CRITICAL! NUCLEAR LAUNCH INITIATED! ☢️`, "critical");
-                        addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${damage} HP)`, "damage");
+                        addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${baseDamage} HP)`, "damage");
 
-                        // Retaliation Check
+                        // Retaliation Check (slightly reduced damage)
                         if (country2.nuclear.hasNuclear) {
-                            activeHp1 = Math.max(0, activeHp1 - damage);
+                            const retaliationDamage = Math.floor(baseDamage * 0.8); // 20 damage
+                            activeHp1 = Math.max(0, activeHp1 - retaliationDamage);
                             setHp1(activeHp1);
                             addLog(`🚀 RETALIATION DETECTED: ${country2.name} launches counter-strike!`, "critical");
-                            addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${damage} HP)`, "damage");
+                            addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${retaliationDamage} HP)`, "damage");
                         }
                     }
                     // Check Player 2 Trigger (if they hit threshold first)
-                    else if (!hasNukeFired && country2.nuclear.hasNuclear && activeHp2 <= 50) {
+                    else if (!hasNukeFired && country2.nuclear.hasNuclear && activeHp2 <= 40) {
                         hasNukeFired = true;
-                        activeHp1 = Math.max(0, activeHp1 - damage);
+                        activeHp1 = Math.max(0, activeHp1 - baseDamage);
                         setHp1(activeHp1);
                         addLog(`☢️ EMERGENCY: ${country2.name} HP CRITICAL! NUCLEAR LAUNCH INITIATED! ☢️`, "critical");
-                        addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${damage} HP)`, "damage");
+                        addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${baseDamage} HP)`, "damage");
 
-                        // Retaliation Check
+                        // Retaliation Check (slightly reduced damage)
                         if (country1.nuclear.hasNuclear) {
-                            activeHp2 = Math.max(0, activeHp2 - damage);
+                            const retaliationDamage = Math.floor(baseDamage * 0.8); // 20 damage
+                            activeHp2 = Math.max(0, activeHp2 - retaliationDamage);
                             setHp2(activeHp2);
                             addLog(`🚀 RETALIATION DETECTED: ${country1.name} launches counter-strike!`, "critical");
-                            addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${damage} HP)`, "damage");
+                            addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${retaliationDamage} HP)`, "damage");
                         }
                     }
                 }
@@ -484,11 +493,12 @@ function SimulationPageContent() {
                             {!isSimulating && !winner && (
                                 <button
                                     onClick={runSimulation}
-                                    disabled={!country1 || !country2}
+                                    disabled={!country1 || !country2 || country1.id === country2.id}
                                     className="w-full py-4 bg-red-600 hover:bg-red-700 disabled:bg-slate-800 disabled:text-slate-600 text-white font-black text-xl rounded shadow-[0_0_20px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 uppercase tracking-tight"
+                                    title={country1?.id === country2?.id ? "Cannot simulate the same country" : ""}
                                 >
                                     <Swords className="w-6 h-6" />
-                                    Engage
+                                    {country1?.id === country2?.id ? "Select Different Countries" : "Engage"}
                                 </button>
                             )}
 

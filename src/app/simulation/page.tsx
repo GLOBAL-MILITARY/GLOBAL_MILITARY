@@ -5,11 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, Crosshair, Skull, Trophy, AlertTriangle, Swords, Play, Ship, Plane } from "lucide-react";
 import { getAllCountries, getCountryById, CountryData } from "@/lib/mockData";
-import { tacticsData, Tactic } from "@/lib/tacticsData";
+import { ALL_TACTICS, Tactic, PersonalityType, ScenarioType } from "@/lib/tacticsData";
 import Footer from "@/components/Footer";
 
 // Types
-type ScenarioType = "TOTAL_WAR" | "NAVAL_BLOCKADE" | "AIR_SUPERIORITY" | "BORDER_SKIRMISH";
+// ScenarioType is now imported
+// type ScenarioType = "TOTAL_WAR" | "NAVAL_BLOCKADE" | "AIR_SUPERIORITY" | "BORDER_SKIRMISH";
 
 interface BattleLog {
     timestamp: string;
@@ -91,6 +92,39 @@ const DOCTRINE_INFO: Record<MilitaryDoctrine, { label: string; icon: any; color:
     "ASYMMETRIC": { label: "Asymmetric / Guerilla", icon: AlertTriangle, color: "text-red-400", desc: "Unpredictable critical hits" }
 };
 
+// Personality System
+// PersonalityType is imported
+
+const PREDEFINED_PERSONALITIES: Record<string, PersonalityType> = {
+    // Offensive (Power projection / Aggressive posture)
+    "usa": "OFFENSIVE", "rus": "OFFENSIVE", "chn": "OFFENSIVE",
+    "nko": "OFFENSIVE", "isr": "OFFENSIVE", "irn": "OFFENSIVE",
+    "tur": "OFFENSIVE", "tky": "OFFENSIVE", "gbr": "OFFENSIVE",
+    "fra": "OFFENSIVE", // Expeditionary capability
+
+    // Defensive (Territorial defense / Deterrence)
+    "sko": "DEFENSIVE", "ukr": "DEFENSIVE", "twn": "DEFENSIVE",
+    "pol": "DEFENSIVE", "fin": "DEFENSIVE", "vnm": "DEFENSIVE",
+    "ind": "DEFENSIVE", "egy": "DEFENSIVE", "che": "DEFENSIVE",
+    "swe": "DEFENSIVE", "tjk": "DEFENSIVE", "arm": "DEFENSIVE",
+
+    // Neutral/Balanced (Expeditionary but peacekeeping / Mixed)
+    "ukd": "NEUTRAL", "deu": "NEUTRAL", "ger": "NEUTRAL",
+    "jpn": "NEUTRAL", "ita": "NEUTRAL", "bra": "NEUTRAL",
+    "can": "NEUTRAL", "aus": "NEUTRAL", "idn": "NEUTRAL",
+    "ino": "NEUTRAL", "sau": "NEUTRAL"
+};
+
+const getPersonality = (id: string): PersonalityType => {
+    return PREDEFINED_PERSONALITIES[id.toLowerCase()] || "NEUTRAL";
+};
+
+const PERSONALITY_INFO: Record<PersonalityType, { label: string; icon: any; color: string; desc: string }> = {
+    "OFFENSIVE": { label: "OFFENSIVE", icon: Swords, color: "text-red-500", desc: "+10% Dmg Dealt, +5% Dmg Taken" },
+    "DEFENSIVE": { label: "DEFENSIVE", icon: Shield, color: "text-blue-500", desc: "-10% Dmg Output, -15% Dmg Taken" },
+    "NEUTRAL": { label: "NEUTRAL", icon: Crosshair, color: "text-slate-400", desc: "Standard Combat Stats" }
+};
+
 function SimulationPageContent() {
     const searchParams = useSearchParams();
 
@@ -102,6 +136,8 @@ function SimulationPageContent() {
     const [winner, setWinner] = useState<CountryData | null>(null);
     const [hp1, setHp1] = useState(100);
     const [hp2, setHp2] = useState(100);
+    const [tactic1, setTactic1] = useState<string | null>(null);
+    const [tactic2, setTactic2] = useState<string | null>(null);
     const [useNuclear, setUseNuclear] = useState(false);
 
     const countries = getAllCountries();
@@ -120,6 +156,7 @@ function SimulationPageContent() {
     }, [country1Id, country2Id, canUseNuclear]);
 
     const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
+    const currentSimulationId = React.useRef<number>(0);
     const gameStateRef = React.useRef({
         hp1: 100,
         hp2: 100,
@@ -133,6 +170,8 @@ function SimulationPageContent() {
         setBattleLogs([]);
         setHp1(100);
         setHp2(100);
+        setTactic1(null);
+        setTactic2(null);
     };
 
     // Simulation Engine
@@ -145,34 +184,62 @@ function SimulationPageContent() {
             return;
         }
 
+        // Helper Data: Border Adjacency (ISO Alpha-3)
+        const BORDER_ADJACENCY: Record<string, string[]> = {
+            "sko": ["nko"],
+            "nko": ["sko", "chn", "rus"],
+            "chn": ["ind", "rus", "nko", "vnm", "mmr", "btn", "nep", "pak", "afg", "tjk", "kgz", "kaz", "mng"],
+            "ind": ["chn", "pak", "btn", "nep", "bgd", "mmr"],
+            "pak": ["ind", "chn", "afg", "irn"],
+            "rus": ["chn", "nko", "kaz", "mng", "geo", "aze", "ukr", "blr", "lva", "est", "fin", "nor", "pol"], // pol via Kaliningrad
+            "ukr": ["rus", "blr", "pol", "svk", "hun", "rou", "mda"],
+            "blr": ["rus", "ukr", "pol", "ltu", "lva"],
+            "pol": ["ukr", "blr", "deu", "cze", "svk", "ltu", "rus"],
+            "usa": ["can", "mex"],
+            "can": ["usa"],
+            "mex": ["usa", "gtm", "blz"],
+            "isr": ["egy", "jor", "syr", "lbn", "pse"],
+            "irn": ["pak", "afg", "tkm", "aze", "arm", "tur", "irq"],
+            "egy": ["isr", "pse", "lby", "sdn"],
+            "jor": ["isr", "pse", "syr", "irq", "sau"],
+            "syr": ["isr", "lbn", "tur", "irq", "jor"],
+            "lbn": ["isr", "syr"],
+            "tky": ["grc", "bgr", "geo", "arm", "aze", "irn", "irq", "syr"],
+            "tur": ["grc", "bgr", "geo", "arm", "aze", "irn", "irq", "syr"],
+            "grc": ["alb", "mkd", "bgr", "tur"],
+            "fra": ["bel", "lux", "deu", "che", "ita", "mco", "esp", "and"],
+            "deu": ["dnk", "pol", "cze", "aut", "che", "fra", "lux", "bel", "nld"],
+            "ger": ["dnk", "pol", "cze", "aut", "che", "fra", "lux", "bel", "nld"],
+            "ita": ["fra", "che", "aut", "svn"],
+            "ukd": ["irl"],
+            "bra": ["arg", "bol", "col", "guf", "guy", "pry", "per", "sur", "ury", "ven"],
+            "jpn": [],
+            "ino": ["mys", "png", "tls"],
+            "arg": ["bol", "bra", "chl", "pry", "ury"],
+            "bol": ["arg", "bra", "chl", "pry", "per"],
+        };
+
+        const c1Id = country1.id.toLowerCase();
+        const c2Id = country2.id.toLowerCase();
+
+        const neighbors1 = BORDER_ADJACENCY[c1Id] || [];
+        const isNeighbor = neighbors1.includes(c2Id);
+
         // 2. Border Skirmish Constraint (Adjacency Check)
         if (scenario === "BORDER_SKIRMISH") {
-            const BORDER_ADJACENCY: Record<string, string[]> = {
-                "sko": ["nko"],
-                "nko": ["sko", "chn", "rus"],
-                "chn": ["ind", "rus", "nko", "vnm", "mmr", "btn", "nep", "pak", "afg", "tjk", "kgz", "kaz", "mng"],
-                "ind": ["chn", "pak", "btn", "nep", "bgd", "mmr"],
-                "pak": ["ind", "chn", "afg", "irn"],
-                "rus": ["chn", "nko", "kaz", "mng", "geo", "aze", "ukr", "blr", "lva", "est", "fin", "nor"],
-                "ukr": ["rus", "blr", "pol", "svk", "hun", "rou", "mda"],
-                "blr": ["rus", "ukr", "pol", "ltu", "lva"],
-                "pol": ["ukr", "blr", "deu", "cze", "svk", "ltu", "rus"], // rus via Kaliningrad
-                "usa": ["can", "mex"],
-                "can": ["usa"],
-                "isr": ["egy", "jor", "syr", "lbn", "pse"],
-                "irn": ["pak", "afg", "tkm", "aze", "arm", "tur", "irq"],
-            };
-
-            const neighbors1 = BORDER_ADJACENCY[country1.id] || [];
-            if (!neighbors1.includes(country2.id)) {
+            if (!isNeighbor) {
                 // Double check reverse direction just in case
-                const neighbors2 = BORDER_ADJACENCY[country2.id] || [];
-                if (!neighbors2.includes(country1.id)) {
+                const neighbors2 = BORDER_ADJACENCY[c2Id] || [];
+                if (!neighbors2.includes(c1Id)) {
                     alert(`Border Skirmish is only available for countries sharing a land border.\n(e.g., South Korea vs North Korea, Ukraine vs Russia)`);
                     return;
                 }
             }
         }
+
+        // Initialize new run
+        const runId = Date.now();
+        currentSimulationId.current = runId;
 
         // Reset State
         if (intervalRef.current) clearInterval(intervalRef.current);
@@ -181,6 +248,8 @@ function SimulationPageContent() {
         setWinner(null);
         setHp1(100);
         setHp2(100);
+        setTactic1(null);
+        setTactic2(null);
 
         const addLog = (msg: string, type: BattleLog["type"] = "info", source?: string) => {
             setBattleLogs(prev => [...prev, {
@@ -196,6 +265,13 @@ function SimulationPageContent() {
             addLog(`☢️ WARNING: NUCLEAR WEAPONS AUTHORIZED ☢️`, "critical");
         }
         addLog(`${country1.name} vs ${country2.name}`);
+
+        // Artillery Restriction Logic
+        const artilleryEnabled = isNeighbor;
+        if (!artilleryEnabled && scenario !== "NAVAL_BLOCKADE" && scenario !== "AIR_SUPERIORITY") {
+            addLog(`⚠️ DISTANCE: Non-adjacent countries. Artillery support unavailable (Damage Reduced).`, "info");
+        }
+
         // Calculate Doctrines
         const doctrine1 = getCountryDoctrine(country1);
         const doctrine2 = getCountryDoctrine(country2);
@@ -203,11 +279,33 @@ function SimulationPageContent() {
         addLog(`${country1.name} doctrine: ${DOCTRINE_INFO[doctrine1].label}`);
         addLog(`${country2.name} doctrine: ${DOCTRINE_INFO[doctrine2].label}`);
 
+        // Personality Logic
+        const p1Type = getPersonality(country1.id);
+        const p2Type = getPersonality(country2.id);
+
+        addLog(`${country1.name} personality: ${PERSONALITY_INFO[p1Type].label}`);
+        addLog(`${country2.name} personality: ${PERSONALITY_INFO[p2Type].label}`);
+
         await new Promise(r => setTimeout(r, 1000));
+        if (currentSimulationId.current !== runId) return;
 
         // Combat Modifiers based on Doctrine vs Scenario
         let mod1 = 1.0;
         let mod2 = 1.0;
+
+        // Personality Modifiers
+        // Offensive: +10% deal, +5% take
+        // Defensive: -10% deal, -15% take
+        let p1DmgMult = 1.0; // Damage I deal
+        let p1DefMult = 1.0; // Damage I take
+        let p2DmgMult = 1.0;
+        let p2DefMult = 1.0;
+
+        if (p1Type === "OFFENSIVE") { p1DmgMult = 1.1; p1DefMult = 1.05; }
+        if (p1Type === "DEFENSIVE") { p1DmgMult = 0.9; p1DefMult = 0.85; }
+
+        if (p2Type === "OFFENSIVE") { p2DmgMult = 1.1; p2DefMult = 1.05; }
+        if (p2Type === "DEFENSIVE") { p2DmgMult = 0.9; p2DefMult = 0.85; }
 
         const applyDoctrineBonus = (doc: MilitaryDoctrine, scn: ScenarioType) => {
             if (doc === "BALANCED") return 1.1; // Small consistent bonus
@@ -240,6 +338,7 @@ function SimulationPageContent() {
         addLog(`Tech Lv ${tech2}: x${techMult2.toFixed(2)} Power`, "info", country2.name);
 
         await new Promise(r => setTimeout(r, 1000));
+        if (currentSimulationId.current !== runId) return;
 
         // Robust Power Calculation
         const p1 = country1.powerIndex > 0 ? country1.powerIndex : 0.0001;
@@ -247,6 +346,12 @@ function SimulationPageContent() {
 
         // Raw Power: Inverse of PowerIndex (Lower is better)
         // Apply Tech Multiplier to Raw Power
+        // Apply Personality Modifiers: (My Damage Output * Enemy Defense Reduction)
+        // Effectively: If I am Offensive (1.1x), and Enemy is Defensive (0.85x taken), my effective power is 1.1 * 1.0 (DefMult is self-taken, so we need to apply MY DmgMult and Enemy DefMult to MY damage output)
+
+        // Let's apply it directly to damage output instead of Raw Power for cleaner logic
+        // But here we set Raw Power which determines base damage.
+
         const rawPower1 = (1 / p1) * (1 + Math.random() * 0.2) * mod1 * techMult1;
         const rawPower2 = (1 / p2) * (1 + Math.random() * 0.2) * mod2 * techMult2;
 
@@ -259,6 +364,9 @@ function SimulationPageContent() {
         // Force reset UI immediately
         setHp1(100);
         setHp2(100);
+
+        // Check run ID before starting interval logic to be safe
+        if (currentSimulationId.current !== runId) return;
 
         intervalRef.current = setInterval(() => {
             try {
@@ -318,6 +426,12 @@ function SimulationPageContent() {
                 let dmg1 = Math.max(5, Math.floor((Math.random() * 15 + 5) * (rawPower2 / rawPower1)));
                 let dmg2 = Math.max(5, Math.floor((Math.random() * 15 + 5) * (rawPower1 / rawPower2)));
 
+                // Artillery Penalty if not neighbors (only affects dmg when not air or naval specialized scenario)
+                if (!artilleryEnabled && scenario !== "AIR_SUPERIORITY" && scenario !== "NAVAL_BLOCKADE") {
+                    dmg1 = Math.floor(dmg1 * 0.85); // 15% penalty
+                    dmg2 = Math.floor(dmg2 * 0.85);
+                }
+
                 // Tactic Triggers & Multipliers
                 let mult1 = 1.0;
                 let mult2 = 1.0;
@@ -356,30 +470,61 @@ function SimulationPageContent() {
                         "repels enemy border infiltration"
                     ]
                 };
-                const events = SCENARIO_EVENTS[scenario];
-
-                // Fetch Tactics Safely
-                const pool1 = tacticsData[country1.id.toLowerCase()] || [];
-                const pool2 = tacticsData[country2.id.toLowerCase()] || [];
-
-                const attTactics = pool1.filter(t => t.mode === 'OFFENSE' || t.mode === 'SPECIAL');
-                const defTactics = pool2.filter(t => t.mode === 'DEFENSE' || t.mode === 'SPECIAL');
-
-                const tryTriggerTactic = (user: CountryData, pool: Tactic[], isAttacker: boolean) => {
-                    if (pool.length > 0 && Math.random() < 0.15) {
-                        const tactic = pool[Math.floor(Math.random() * pool.length)];
-                        addLog(`${user.name} initiates [${tactic.name}]: ${tactic.description}`, "info", user.name);
-                        if (isAttacker) mult1 *= 1.2;
-                        else mult2 *= 1.2;
-                    }
+                // Filter Events if Artillery Disabled
+                let events = [...SCENARIO_EVENTS[scenario]];
+                if (!artilleryEnabled) {
+                    events = events.filter(e =>
+                        !e.includes("artillery") &&
+                        !e.includes("mortar") &&
+                        !e.includes("howitzer")
+                    );
                 }
 
-                tryTriggerTactic(country1, attTactics, true);
-                tryTriggerTactic(country2, defTactics, false);
+                // Fetch Tactics (New System)
+                const p1Tactics = ALL_TACTICS.filter(t => t.personality === p1Type && t.scenario === scenario);
+                const p2Tactics = ALL_TACTICS.filter(t => t.personality === p2Type && t.scenario === scenario);
+
+                const executeTactic = (user: CountryData, pool: Tactic[], enemyPool: Tactic[], isP1: boolean) => {
+                    // 12% chance to trigger a tactic per tick
+                    if (pool.length > 0 && Math.random() < 0.12) {
+                        const tactic = pool[Math.floor(Math.random() * pool.length)];
+                        addLog(`${user.name} initiates [${tactic.name}]: ${tactic.description}`, "info", user.name);
+
+                        if (isP1) setTactic1(tactic.name);
+                        else setTactic2(tactic.name);
+
+                        let bonusApplied = true;
+
+                        // Counter-Tactic Check (25% chance if enemy has tactics available)
+                        if (enemyPool.length > 0 && Math.random() < 0.25) {
+                            const counter = enemyPool[Math.floor(Math.random() * enemyPool.length)];
+                            addLog(`COUNTER! ${isP1 ? country2.name : country1.name} responds with [${counter.name}]!`, "critical");
+
+                            // Show the counter tactic on the defender's side
+                            if (isP1) setTactic2(counter.name);
+                            else setTactic1(counter.name);
+
+                            bonusApplied = false; // Counter negates the bonus
+                        }
+
+                        if (bonusApplied) {
+                            if (isP1) mult1 *= 1.25;
+                            else mult2 *= 1.25;
+                        }
+                    }
+                };
+
+                executeTactic(country1, p1Tactics, p2Tactics, true);
+                executeTactic(country2, p2Tactics, p1Tactics, false);
 
                 // Apply Multipliers
-                dmg1 = Math.floor(dmg1 * mult1);
-                dmg2 = Math.floor(dmg2 * mult2);
+                // Personality Multipliers Applied Here
+                // dmg1 is damage dealt BY Player 1 TO Player 2
+                // So dmg1 = Base * p1DmgMult * (1 / p2DefMult)? No, easier to just multiplier.
+                // If P2 is Defensive, they take 0.85x damage. So dmg1 *= 0.85
+
+                dmg1 = Math.floor(dmg1 * mult1 * p1DmgMult * p2DefMult);
+                dmg2 = Math.floor(dmg2 * mult2 * p2DmgMult * p1DefMult);
 
                 // Critical Hits
                 if (Math.random() < critChance2) dmg1 = Math.floor(dmg1 * 1.5);
@@ -440,9 +585,21 @@ function SimulationPageContent() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
                         {/* Player 1 */}
                         <div className="lg:col-span-4 bg-slate-900/50 border border-blue-500/30 p-6 rounded-xl">
-                            <div className="text-blue-500 font-bold mb-4 flex items-center gap-2">
-                                <Shield className="w-5 h-5" /> BLUE FORCE
+                            <div className="text-blue-500 font-bold mb-4 flex items-center justify-between">
+                                <span className="flex items-center gap-2"><Shield className="w-5 h-5" /> BLUE FORCE</span>
+                                {country1 && (
+                                    <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(country1.id)].color} flex items-center gap-1`}>
+                                        {React.createElement(PERSONALITY_INFO[getPersonality(country1.id)].icon, { className: "w-3 h-3" })}
+                                        {PERSONALITY_INFO[getPersonality(country1.id)].label}
+                                    </span>
+                                )}
                             </div>
+                            {tactic1 && (
+                                <div className="mb-4 text-xs font-mono text-amber-400 bg-amber-900/30 px-3 py-2 rounded border border-amber-500/50 flex items-center justify-between animate-pulse">
+                                    <span className="font-bold">TACTIC ACTIVE</span>
+                                    <span>{tactic1}</span>
+                                </div>
+                            )}
                             <select
                                 className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4"
                                 value={country1Id}
@@ -521,9 +678,21 @@ function SimulationPageContent() {
 
                         {/* Player 2 */}
                         <div className="lg:col-span-4 bg-slate-900/50 border border-red-500/30 p-6 rounded-xl">
-                            <div className="text-red-500 font-bold mb-4 flex items-center gap-2 justify-end">
-                                RED FORCE <Shield className="w-5 h-5" />
+                            <div className="text-red-500 font-bold mb-4 flex items-center justify-between">
+                                {country2 && (
+                                    <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(country2.id)].color} flex items-center gap-1`}>
+                                        {React.createElement(PERSONALITY_INFO[getPersonality(country2.id)].icon, { className: "w-3 h-3" })}
+                                        {PERSONALITY_INFO[getPersonality(country2.id)].label}
+                                    </span>
+                                )}
+                                <span className="flex items-center gap-2">RED FORCE <Shield className="w-5 h-5" /></span>
                             </div>
+                            {tactic2 && (
+                                <div className="mb-4 text-xs font-mono text-amber-400 bg-amber-900/30 px-3 py-2 rounded border border-amber-500/50 flex items-center justify-between animate-pulse">
+                                    <span className="font-bold">TACTIC ACTIVE</span>
+                                    <span>{tactic2}</span>
+                                </div>
+                            )}
                             <select
                                 className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4"
                                 value={country2Id}
@@ -618,7 +787,7 @@ function SimulationPageContent() {
                     </div>
 
                 </div>
-            </main>
+            </main >
 
         </>
     );

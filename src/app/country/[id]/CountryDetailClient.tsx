@@ -70,17 +70,7 @@ export default function CountryDetailClient({
                     >
                         <div className="relative h-80 bg-slate-900">
 
-                            {/* Compare Button */}
-                            <Link href={`/compare?target=${country.id}`}>
-                                <motion.button
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="absolute top-4 right-4 px-4 py-2 bg-power-gold/20 border border-power-gold/40 rounded-lg text-power-gold font-semibold text-sm hover:bg-power-gold/30 transition-colors flex items-center gap-2 z-10 backdrop-blur-sm"
-                                >
-                                    <Shield className="w-4 h-4" />
-                                    Compare Countries
-                                </motion.button>
-                            </Link>
+
 
                             {/* Country Info Overlay */}
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900 to-transparent p-6">
@@ -149,6 +139,16 @@ export default function CountryDetailClient({
                                             >
                                                 <Swords className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                                                 Simulate Combat
+                                            </Link>
+                                            <Link href={`/compare?target=${country.id}`}>
+                                                <motion.button
+                                                    whileHover={{ scale: 1.05 }}
+                                                    whileTap={{ scale: 0.95 }}
+                                                    className="flex items-center gap-2 px-4 py-2 bg-power-gold/20 border border-power-gold/40 rounded-lg text-power-gold font-semibold text-sm hover:bg-power-gold/30 transition-colors"
+                                                >
+                                                    <Shield className="w-4 h-4" />
+                                                    Compare Countries
+                                                </motion.button>
                                             </Link>
                                         </div>
                                     </div>

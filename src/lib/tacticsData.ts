@@ -1553,7 +1553,7 @@ export const ALL_TACTICS: Tactic[] = [
     {
         id: "neutral_air_superiority_220",
         name: "비행 금지 구역",
-        description: "특정 하늘을 "누구도 날 수 없는 곳"으로 선포해 공습을 원천 차단합니다.",
+        description: "특정 하늘을 \"누구도 날 수 없는 곳\"으로 선포해 공습을 원천 차단합니다.",
         personality: "NEUTRAL",
         scenario: "AIR_SUPERIORITY"
     },

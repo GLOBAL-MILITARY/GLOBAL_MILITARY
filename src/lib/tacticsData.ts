@@ -1224,7 +1224,7 @@ export const ALL_TACTICS: Tactic[] = [
     {
         id: "neutral_total_war_173",
         name: "방어적 억제력",
-        description: ""공격하면 너도 죽는다"는 핵전력이나 강력한 무기를 보여주며 평화를 유지합니다.",
+        description: "\"공격하면 너도 죽는다\"는 핵전력이나 강력한 무기를 보여주며 평화를 유지합니다.",
         personality: "NEUTRAL",
         scenario: "TOTAL_WAR"
     },

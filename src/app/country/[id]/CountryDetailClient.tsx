@@ -17,7 +17,7 @@ import {
 import { CountryData } from "@/lib/mockData";
 import { CountryDetail } from "@/lib/countryDetails";
 import { getPowerColor, formatNumber } from "@/lib/utils";
-import { tacticsData, Tactic } from "@/lib/tacticsData";
+import { ALL_TACTICS, Tactic, getPersonality, ScenarioType } from "@/lib/tacticsData";
 import Footer from "@/components/Footer";
 
 
@@ -397,19 +397,19 @@ export default function CountryDetailClient({
                             </div>
 
                             <div className="p-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                    {['OFFENSE', 'DEFENSE', 'SPECIAL'].map((mode) => {
-                                        const countryTactics = tacticsData[country.id.toLowerCase()] || [];
-                                        const modeTactics = countryTactics.filter(t => t.mode === mode);
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    {(['TOTAL_WAR', 'NAVAL_BLOCKADE', 'AIR_SUPERIORITY', 'BORDER_SKIRMISH'] as ScenarioType[]).map((scenario) => {
+                                        const pType = getPersonality(country.id);
+                                        const countryTactics = ALL_TACTICS.filter(t => t.personality === pType && t.scenario === scenario);
 
-                                        if (modeTactics.length === 0) return null;
+                                        if (countryTactics.length === 0) return null;
 
                                         return (
-                                            <div key={mode} className="space-y-3">
+                                            <div key={scenario} className="space-y-3">
                                                 <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider border-b border-slate-700 pb-2 mb-3">
-                                                    {mode}
+                                                    {scenario.replace(/_/g, " ")}
                                                 </h4>
-                                                {modeTactics.map(tactic => (
+                                                {countryTactics.map(tactic => (
                                                     <div key={tactic.id} className="bg-slate-800/40 p-3 rounded-lg border border-slate-700/50">
                                                         <div className="font-semibold text-slate-200 text-sm">{tactic.name}</div>
                                                         <div className="text-xs text-slate-500 mt-1">{tactic.description}</div>

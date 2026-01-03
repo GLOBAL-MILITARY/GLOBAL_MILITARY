@@ -9,6 +9,30 @@ export interface Tactic {
     scenario: ScenarioType;
 }
 
+export const PREDEFINED_PERSONALITIES: Record<string, PersonalityType> = {
+    // Offensive (Power projection / Aggressive posture)
+    "usa": "OFFENSIVE", "rus": "OFFENSIVE", "chn": "OFFENSIVE",
+    "nko": "OFFENSIVE", "isr": "OFFENSIVE", "irn": "OFFENSIVE",
+    "tur": "OFFENSIVE", "tky": "OFFENSIVE", "gbr": "OFFENSIVE",
+    "fra": "OFFENSIVE", // Expeditionary capability
+
+    // Defensive (Territorial defense / Deterrence)
+    "sko": "DEFENSIVE", "ukr": "DEFENSIVE", "twn": "DEFENSIVE",
+    "pol": "DEFENSIVE", "fin": "DEFENSIVE", "vnm": "DEFENSIVE",
+    "ind": "DEFENSIVE", "egy": "DEFENSIVE", "che": "DEFENSIVE",
+    "swe": "DEFENSIVE", "tjk": "DEFENSIVE", "arm": "DEFENSIVE",
+
+    // Neutral/Balanced (Expeditionary but peacekeeping / Mixed)
+    "ukd": "NEUTRAL", "deu": "NEUTRAL", "ger": "NEUTRAL",
+    "jpn": "NEUTRAL", "ita": "NEUTRAL", "bra": "NEUTRAL",
+    "can": "NEUTRAL", "aus": "NEUTRAL", "idn": "NEUTRAL",
+    "ino": "NEUTRAL", "sau": "NEUTRAL"
+};
+
+export const getPersonality = (id: string): PersonalityType => {
+    return PREDEFINED_PERSONALITIES[id.toLowerCase()] || "NEUTRAL";
+};
+
 export const ALL_TACTICS: Tactic[] = [
     {
         id: "offensive_total_war_0",

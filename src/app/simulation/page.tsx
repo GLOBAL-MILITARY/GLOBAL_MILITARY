@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, Crosshair, Skull, Trophy, AlertTriangle, Swords, Play, Ship, Plane } from "lucide-react";
 import { getAllCountries, getCountryById, CountryData } from "@/lib/mockData";
-import { ALL_TACTICS, Tactic, PersonalityType, ScenarioType } from "@/lib/tacticsData";
+import { ALL_TACTICS, Tactic, PersonalityType, ScenarioType, getPersonality } from "@/lib/tacticsData";
 import Footer from "@/components/Footer";
 
 // Types
@@ -95,29 +95,8 @@ const DOCTRINE_INFO: Record<MilitaryDoctrine, { label: string; icon: any; color:
 // Personality System
 // PersonalityType is imported
 
-const PREDEFINED_PERSONALITIES: Record<string, PersonalityType> = {
-    // Offensive (Power projection / Aggressive posture)
-    "usa": "OFFENSIVE", "rus": "OFFENSIVE", "chn": "OFFENSIVE",
-    "nko": "OFFENSIVE", "isr": "OFFENSIVE", "irn": "OFFENSIVE",
-    "tur": "OFFENSIVE", "tky": "OFFENSIVE", "gbr": "OFFENSIVE",
-    "fra": "OFFENSIVE", // Expeditionary capability
-
-    // Defensive (Territorial defense / Deterrence)
-    "sko": "DEFENSIVE", "ukr": "DEFENSIVE", "twn": "DEFENSIVE",
-    "pol": "DEFENSIVE", "fin": "DEFENSIVE", "vnm": "DEFENSIVE",
-    "ind": "DEFENSIVE", "egy": "DEFENSIVE", "che": "DEFENSIVE",
-    "swe": "DEFENSIVE", "tjk": "DEFENSIVE", "arm": "DEFENSIVE",
-
-    // Neutral/Balanced (Expeditionary but peacekeeping / Mixed)
-    "ukd": "NEUTRAL", "deu": "NEUTRAL", "ger": "NEUTRAL",
-    "jpn": "NEUTRAL", "ita": "NEUTRAL", "bra": "NEUTRAL",
-    "can": "NEUTRAL", "aus": "NEUTRAL", "idn": "NEUTRAL",
-    "ino": "NEUTRAL", "sau": "NEUTRAL"
-};
-
-const getPersonality = (id: string): PersonalityType => {
-    return PREDEFINED_PERSONALITIES[id.toLowerCase()] || "NEUTRAL";
-};
+// Personality System
+// PersonalityType is imported
 
 const PERSONALITY_INFO: Record<PersonalityType, { label: string; icon: any; color: string; desc: string }> = {
     "OFFENSIVE": { label: "OFFENSIVE", icon: Swords, color: "text-red-500", desc: "+10% Dmg Dealt, +5% Dmg Taken" },

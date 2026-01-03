@@ -48,12 +48,6 @@ export default function CountryDetailClient({
             </div>
         );
     }
-    const [expandedSection, setExpandedSection] = useState<string | null>(null);
-
-    const toggleSection = (section: string) => {
-        setExpandedSection(expandedSection === section ? null : section);
-    };
-
     // Sort relations by rank (ascending) as requested
     const sortedAllies = [...related.allies].sort((a, b) => a.rank - b.rank);
     const sortedThreats = [...related.threats].sort((a, b) => a.rank - b.rank);
@@ -214,10 +208,7 @@ export default function CountryDetailClient({
                             transition={{ delay: 0.1 }}
                             className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden"
                         >
-                            <button
-                                onClick={() => toggleSection("army")}
-                                className="w-full p-6 flex items-center justify-between hover:bg-slate-800/50 transition-colors"
-                            >
+                            <div className="w-full p-6 flex items-center justify-between border-b border-slate-800">
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
                                         <Users className="w-6 h-6 text-green-400" />
@@ -227,56 +218,45 @@ export default function CountryDetailClient({
                                         <p className="text-slate-400 text-sm">Ground Forces</p>
                                     </div>
                                 </div>
-                                <ChevronDown
-                                    className={`w-5 h-5 text-slate-400 transition-transform ${expandedSection === "army" ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
+                            </div>
 
-                            {expandedSection === "army" && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="border-t border-slate-800 p-6 space-y-3"
-                                >
-                                    <StatRow
-                                        label="Active Personnel"
-                                        value={formatNumber(country.army.activePersonnel)}
-                                        rawValue={country.army.activePersonnel}
-                                    />
-                                    <StatRow
-                                        label="Reserve Personnel"
-                                        value={formatNumber(country.army.reservePersonnel)}
-                                        rawValue={country.army.reservePersonnel}
-                                    />
-                                    <StatRow
-                                        label="Tanks"
-                                        value={formatNumber(country.army.tanks)}
-                                        rawValue={country.army.tanks}
-                                    />
-                                    <StatRow
-                                        label="Armored Vehicles"
-                                        value={formatNumber(country.army.afv)}
-                                        rawValue={country.army.afv}
-                                    />
-                                    <StatRow
-                                        label="Self-Propelled Artillery"
-                                        value={formatNumber(country.army.selfPropelledArtillery)}
-                                        rawValue={country.army.selfPropelledArtillery}
-                                    />
-                                    <StatRow
-                                        label="Towed Artillery"
-                                        value={formatNumber(country.army.towedArtillery)}
-                                        rawValue={country.army.towedArtillery}
-                                    />
-                                    <StatRow
-                                        label="Rocket Projectors"
-                                        value={formatNumber(country.army.rocketProjectors)}
-                                        rawValue={country.army.rocketProjectors}
-                                    />
-                                </motion.div>
-                            )}
+                            <div className="p-6 space-y-3">
+                                <StatRow
+                                    label="Active Personnel"
+                                    value={formatNumber(country.army.activePersonnel)}
+                                    rawValue={country.army.activePersonnel}
+                                />
+                                <StatRow
+                                    label="Reserve Personnel"
+                                    value={formatNumber(country.army.reservePersonnel)}
+                                    rawValue={country.army.reservePersonnel}
+                                />
+                                <StatRow
+                                    label="Tanks"
+                                    value={formatNumber(country.army.tanks)}
+                                    rawValue={country.army.tanks}
+                                />
+                                <StatRow
+                                    label="Armored Vehicles"
+                                    value={formatNumber(country.army.afv)}
+                                    rawValue={country.army.afv}
+                                />
+                                <StatRow
+                                    label="Self-Propelled Artillery"
+                                    value={formatNumber(country.army.selfPropelledArtillery)}
+                                    rawValue={country.army.selfPropelledArtillery}
+                                />
+                                <StatRow
+                                    label="Towed Artillery"
+                                    value={formatNumber(country.army.towedArtillery)}
+                                    rawValue={country.army.towedArtillery}
+                                />
+                                <StatRow
+                                    label="Rocket Projectors"
+                                    value={formatNumber(country.army.rocketProjectors)}
+                                    rawValue={country.army.rocketProjectors}
+                                />
+                            </div>
                         </motion.div>
 
                         {/* Navy Stats */}
@@ -286,10 +266,7 @@ export default function CountryDetailClient({
                             transition={{ delay: 0.2 }}
                             className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden"
                         >
-                            <button
-                                onClick={() => toggleSection("navy")}
-                                className="w-full p-6 flex items-center justify-between hover:bg-slate-800/50 transition-colors"
-                            >
+                            <div className="w-full p-6 flex items-center justify-between border-b border-slate-800">
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
                                         <Ship className="w-6 h-6 text-blue-400" />
@@ -299,56 +276,45 @@ export default function CountryDetailClient({
                                         <p className="text-slate-400 text-sm">Naval Forces</p>
                                     </div>
                                 </div>
-                                <ChevronDown
-                                    className={`w-5 h-5 text-slate-400 transition-transform ${expandedSection === "navy" ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
+                            </div>
 
-                            {expandedSection === "navy" && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="border-t border-slate-800 p-6 space-y-3"
-                                >
-                                    <StatRow
-                                        label="Total Ships"
-                                        value={formatNumber(country.navy.totalShips)}
-                                        rawValue={country.navy.totalShips}
-                                    />
-                                    <StatRow
-                                        label="Aircraft Carriers"
-                                        value={formatNumber(country.navy.aircraftCarriers)}
-                                        rawValue={country.navy.aircraftCarriers}
-                                    />
-                                    <StatRow
-                                        label="Submarines"
-                                        value={formatNumber(country.navy.submarines)}
-                                        rawValue={country.navy.submarines}
-                                    />
-                                    <StatRow
-                                        label="Destroyers"
-                                        value={formatNumber(country.navy.destroyers)}
-                                        rawValue={country.navy.destroyers}
-                                    />
-                                    <StatRow
-                                        label="Frigates"
-                                        value={formatNumber(country.navy.frigates)}
-                                        rawValue={country.navy.frigates}
-                                    />
-                                    <StatRow
-                                        label="Corvettes"
-                                        value={formatNumber(country.navy.corvettes)}
-                                        rawValue={country.navy.corvettes}
-                                    />
-                                    <StatRow
-                                        label="Patrol Vessels"
-                                        value={formatNumber(country.navy.patrolVessels)}
-                                        rawValue={country.navy.patrolVessels}
-                                    />
-                                </motion.div>
-                            )}
+                            <div className="p-6 space-y-3">
+                                <StatRow
+                                    label="Total Ships"
+                                    value={formatNumber(country.navy.totalShips)}
+                                    rawValue={country.navy.totalShips}
+                                />
+                                <StatRow
+                                    label="Aircraft Carriers"
+                                    value={formatNumber(country.navy.aircraftCarriers)}
+                                    rawValue={country.navy.aircraftCarriers}
+                                />
+                                <StatRow
+                                    label="Submarines"
+                                    value={formatNumber(country.navy.submarines)}
+                                    rawValue={country.navy.submarines}
+                                />
+                                <StatRow
+                                    label="Destroyers"
+                                    value={formatNumber(country.navy.destroyers)}
+                                    rawValue={country.navy.destroyers}
+                                />
+                                <StatRow
+                                    label="Frigates"
+                                    value={formatNumber(country.navy.frigates)}
+                                    rawValue={country.navy.frigates}
+                                />
+                                <StatRow
+                                    label="Corvettes"
+                                    value={formatNumber(country.navy.corvettes)}
+                                    rawValue={country.navy.corvettes}
+                                />
+                                <StatRow
+                                    label="Patrol Vessels"
+                                    value={formatNumber(country.navy.patrolVessels)}
+                                    rawValue={country.navy.patrolVessels}
+                                />
+                            </div>
                         </motion.div>
 
                         {/* Air Force Stats */}
@@ -358,10 +324,7 @@ export default function CountryDetailClient({
                             transition={{ delay: 0.3 }}
                             className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden"
                         >
-                            <button
-                                onClick={() => toggleSection("airforce")}
-                                className="w-full p-6 flex items-center justify-between hover:bg-slate-800/50 transition-colors"
-                            >
+                            <div className="w-full p-6 flex items-center justify-between border-b border-slate-800">
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
                                         <Plane className="w-6 h-6 text-purple-400" />
@@ -371,56 +334,45 @@ export default function CountryDetailClient({
                                         <p className="text-slate-400 text-sm">Aerial Forces</p>
                                     </div>
                                 </div>
-                                <ChevronDown
-                                    className={`w-5 h-5 text-slate-400 transition-transform ${expandedSection === "airforce" ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
+                            </div>
 
-                            {expandedSection === "airforce" && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="border-t border-slate-800 p-6 space-y-3"
-                                >
-                                    <StatRow
-                                        label="Total Aircraft"
-                                        value={formatNumber(country.airforce.totalAircraft)}
-                                        rawValue={country.airforce.totalAircraft}
-                                    />
-                                    <StatRow
-                                        label="Fighters"
-                                        value={formatNumber(country.airforce.fighters)}
-                                        rawValue={country.airforce.fighters}
-                                    />
-                                    <StatRow
-                                        label="Bombers"
-                                        value={formatNumber(country.airforce.bombers)}
-                                        rawValue={country.airforce.bombers}
-                                    />
-                                    <StatRow
-                                        label="Attack Helicopters"
-                                        value={formatNumber(country.airforce.attackHelicopters)}
-                                        rawValue={country.airforce.attackHelicopters}
-                                    />
-                                    <StatRow
-                                        label="Helicopters"
-                                        value={formatNumber(country.airforce.helicopters)}
-                                        rawValue={country.airforce.helicopters}
-                                    />
-                                    <StatRow
-                                        label="Transport Aircraft"
-                                        value={formatNumber(country.airforce.transports)}
-                                        rawValue={country.airforce.transports}
-                                    />
-                                    <StatRow
-                                        label="Trainers"
-                                        value={formatNumber(country.airforce.trainers)}
-                                        rawValue={country.airforce.trainers}
-                                    />
-                                </motion.div>
-                            )}
+                            <div className="p-6 space-y-3">
+                                <StatRow
+                                    label="Total Aircraft"
+                                    value={formatNumber(country.airforce.totalAircraft)}
+                                    rawValue={country.airforce.totalAircraft}
+                                />
+                                <StatRow
+                                    label="Fighters"
+                                    value={formatNumber(country.airforce.fighters)}
+                                    rawValue={country.airforce.fighters}
+                                />
+                                <StatRow
+                                    label="Bombers"
+                                    value={formatNumber(country.airforce.bombers)}
+                                    rawValue={country.airforce.bombers}
+                                />
+                                <StatRow
+                                    label="Attack Helicopters"
+                                    value={formatNumber(country.airforce.attackHelicopters)}
+                                    rawValue={country.airforce.attackHelicopters}
+                                />
+                                <StatRow
+                                    label="Helicopters"
+                                    value={formatNumber(country.airforce.helicopters)}
+                                    rawValue={country.airforce.helicopters}
+                                />
+                                <StatRow
+                                    label="Transport Aircraft"
+                                    value={formatNumber(country.airforce.transports)}
+                                    rawValue={country.airforce.transports}
+                                />
+                                <StatRow
+                                    label="Trainers"
+                                    value={formatNumber(country.airforce.trainers)}
+                                    rawValue={country.airforce.trainers}
+                                />
+                            </div>
                         </motion.div>
                     </div>
 
@@ -432,10 +384,7 @@ export default function CountryDetailClient({
                             transition={{ delay: 0.35 }}
                             className="bg-slate-900 rounded-xl border border-slate-800 overflow-hidden"
                         >
-                            <button
-                                onClick={() => toggleSection("tactics")}
-                                className="w-full p-6 flex items-center justify-between hover:bg-slate-800/50 transition-colors"
-                            >
+                            <div className="w-full p-6 flex items-center justify-between border-b border-slate-800">
                                 <div className="flex items-center gap-3">
                                     <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center">
                                         <Swords className="w-6 h-6 text-red-400" />
@@ -445,43 +394,32 @@ export default function CountryDetailClient({
                                         <p className="text-slate-400 text-sm">Strategic & Tactical Capabilities</p>
                                     </div>
                                 </div>
-                                <ChevronDown
-                                    className={`w-5 h-5 text-slate-400 transition-transform ${expandedSection === "tactics" ? "rotate-180" : ""
-                                        }`}
-                                />
-                            </button>
+                            </div>
 
-                            {expandedSection === "tactics" && (
-                                <motion.div
-                                    initial={{ height: 0, opacity: 0 }}
-                                    animate={{ height: "auto", opacity: 1 }}
-                                    exit={{ height: 0, opacity: 0 }}
-                                    className="border-t border-slate-800 p-6"
-                                >
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                        {['OFFENSE', 'DEFENSE', 'SPECIAL'].map((mode) => {
-                                            const countryTactics = tacticsData[country.id.toLowerCase()] || [];
-                                            const modeTactics = countryTactics.filter(t => t.mode === mode);
+                            <div className="p-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                    {['OFFENSE', 'DEFENSE', 'SPECIAL'].map((mode) => {
+                                        const countryTactics = tacticsData[country.id.toLowerCase()] || [];
+                                        const modeTactics = countryTactics.filter(t => t.mode === mode);
 
-                                            if (modeTactics.length === 0) return null;
+                                        if (modeTactics.length === 0) return null;
 
-                                            return (
-                                                <div key={mode} className="space-y-3">
-                                                    <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider border-b border-slate-700 pb-2 mb-3">
-                                                        {mode}
-                                                    </h4>
-                                                    {modeTactics.map(tactic => (
-                                                        <div key={tactic.id} className="bg-slate-800/40 p-3 rounded-lg border border-slate-700/50">
-                                                            <div className="font-semibold text-slate-200 text-sm">{tactic.name}</div>
-                                                            <div className="text-xs text-slate-500 mt-1">{tactic.description}</div>
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                </motion.div>
-                            )}
+                                        return (
+                                            <div key={mode} className="space-y-3">
+                                                <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider border-b border-slate-700 pb-2 mb-3">
+                                                    {mode}
+                                                </h4>
+                                                {modeTactics.map(tactic => (
+                                                    <div key={tactic.id} className="bg-slate-800/40 p-3 rounded-lg border border-slate-700/50">
+                                                        <div className="font-semibold text-slate-200 text-sm">{tactic.name}</div>
+                                                        <div className="text-xs text-slate-500 mt-1">{tactic.description}</div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
                         </motion.div>
                     </div>
 

@@ -1062,14 +1062,7 @@ export const countryDetails: Record<string, CountryDetail> = {
         population: "727,145",
         gdp: "$3.02 billion"
     },
-    "MON": {
-        id: "MON",
-        description: "Montenegro is a country in Southeast Europe. It is located on the Adriatic Sea and is a part of the Balkans, sharing borders with Serbia to the northeast, Bosnia and Herzegovina to the north and west, Kosovo to the east, Albania to the southeast, and the Adriatic Sea and Croatia to the northwest. Podgorica is the capital and largest city.",
-        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Montenegro.svg/500px-Flag_of_Montenegro.svg.png",
-        capital: "Podgorica",
-        population: "633,158",
-        gdp: "$7.53 billion"
-    },
+
     "JAM": {
         id: "JAM",
         description: "Jamaica is an island country in the Caribbean Sea. It is the third-largest island in the Caribbean. Kingston is the capital. It has a population of 2.8 million. Jamaica is known for its vibrant culture, music, and tourism.",

@@ -1,0 +1,12 @@
+
+    const handle1v1Select1 = (id: string) => {
+        if (!id) { setTeam1([]); return; }
+        const c = getCountryById(id);
+        if (c) setTeam1([c]);
+    };
+
+    const handle1v1Select2 = (id: string) => {
+        if (!id) { setTeam2([]); return; }
+        const c = getCountryById(id);
+        if (c) setTeam2([c]);
+    };

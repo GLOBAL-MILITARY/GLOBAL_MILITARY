@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "next/navigation";
 import { Shield, Crosshair, Skull, Trophy, AlertTriangle, Swords, Play, Ship, Plane } from "lucide-react";
 import { getAllCountries, getCountryById, CountryData } from "@/lib/mockData";
-import { ALL_TACTICS, Tactic, PersonalityType, ScenarioType, getPersonality } from "@/lib/tacticsData";
+// import SimulationMap from "@/components/SimulationMap"; // Removed
+import { ALL_TACTICS, Tactic, PersonalityType, ScenarioType, getPersonality, PERSONALITY_INFO } from "@/lib/tacticsData";
 import Footer from "@/components/Footer";
 
 // Types
@@ -95,687 +96,530 @@ const DOCTRINE_INFO: Record<MilitaryDoctrine, { label: string; icon: any; color:
 // Personality System
 // PersonalityType is imported
 
-// Personality System
-// PersonalityType is imported
 
-const PERSONALITY_INFO: Record<PersonalityType, { label: string; icon: any; color: string; desc: string }> = {
-    "OFFENSIVE": { label: "OFFENSIVE", icon: Swords, color: "text-red-500", desc: "+10% Dmg Dealt, +5% Dmg Taken" },
-    "DEFENSIVE": { label: "DEFENSIVE", icon: Shield, color: "text-blue-500", desc: "-10% Dmg Output, -15% Dmg Taken" },
-    "NEUTRAL": { label: "NEUTRAL", icon: Crosshair, color: "text-slate-400", desc: "Standard Combat Stats" }
-};
+
+import TeamBuilder from "@/components/TeamBuilder";
+
+// ... (Imports and Helpers stay same) ...
 
 function SimulationPageContent() {
     const searchParams = useSearchParams();
 
-    const [country1Id, setCountry1Id] = useState<string>(searchParams.get("init") || "");
-    const [country2Id, setCountry2Id] = useState<string>("");
+    // Game Mode
+    const [mode, setMode] = useState<"1v1" | "TEAM">("1v1");
+
+    // Team State (Single Source of Truth)
+    const [team1, setTeam1] = useState<CountryData[]>([]);
+    const [team2, setTeam2] = useState<CountryData[]>([]);
+
+    // Initial sync from URL
+    useEffect(() => {
+        const initC1 = searchParams.get("init");
+        if (initC1) {
+            const c = getCountryById(initC1);
+            if (c) setTeam1([c]);
+        }
+    }, [searchParams]);
+
     const [scenario, setScenario] = useState<ScenarioType>("TOTAL_WAR");
     const [isSimulating, setIsSimulating] = useState(false);
     const [battleLogs, setBattleLogs] = useState<BattleLog[]>([]);
-    const [winner, setWinner] = useState<CountryData | null>(null);
-    const [hp1, setHp1] = useState(100);
-    const [hp2, setHp2] = useState(100);
-    const [tactic1, setTactic1] = useState<string | null>(null);
-    const [tactic2, setTactic2] = useState<string | null>(null);
+    const [winner, setWinner] = useState<string | null>(null); // "TEAM1" or "TEAM2"
+
+    const handle1v1Select1 = (id: string) => {
+        if (!id) { setTeam1([]); return; }
+        const c = getCountryById(id);
+        if (c) setTeam1([c]);
+    };
+
+    const handle1v1Select2 = (id: string) => {
+        if (!id) { setTeam2([]); return; }
+        const c = getCountryById(id);
+        if (c) setTeam2([c]);
+    };
+
+    // HP Maps (CountryID -> HP)
+    const [team1Hp, setTeam1Hp] = useState<Record<string, number>>({});
+    const [team2Hp, setTeam2Hp] = useState<Record<string, number>>({});
+
+    const [activeTactics, setActiveTactics] = useState<Record<string, Tactic>>({}); // CountryID -> Active Tactic
     const [useNuclear, setUseNuclear] = useState(false);
 
     const countries = getAllCountries();
-    const country1 = country1Id ? getCountryById(country1Id) : null;
-    const country2 = country2Id ? getCountryById(country2Id) : null;
 
-    // Check if nuclear option is available (Both must have nuclear weapons)
-    // Check if nuclear option is available (Either country has nuclear weapons)
-    const canUseNuclear = country1?.nuclear.hasNuclear || country2?.nuclear.hasNuclear;
+    // Nuclear Availability Check
+    const canUseNuclear = [...team1, ...team2].some(c => c.nuclear.hasNuclear);
 
-    // Reset nuclear toggle if countries change or aren't eligible
     useEffect(() => {
-        if (!canUseNuclear) {
-            setUseNuclear(false);
-        }
-    }, [country1Id, country2Id, canUseNuclear]);
+        if (!canUseNuclear) setUseNuclear(false);
+    }, [team1, team2, canUseNuclear]);
 
     const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
     const currentSimulationId = React.useRef<number>(0);
-    const gameStateRef = React.useRef({
-        hp1: 100,
-        hp2: 100,
-        round: 1,
-        hasNukeFired: false
-    });
 
-    // Reset Simulation
+    // Reset
     const resetSimulation = () => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        currentSimulationId.current = Date.now();
+        setIsSimulating(false);
         setWinner(null);
         setBattleLogs([]);
-        setHp1(100);
-        setHp2(100);
-        setTactic1(null);
-        setTactic2(null);
+        setTeam1Hp({});
+        setTeam2Hp({});
+        setActiveTactics({});
     };
 
-    // Simulation Engine
+    // Add/Remove Helpers
+    const addToTeam1 = (c: CountryData) => setTeam1(prev => [...prev, c]);
+    const removeFromTeam1 = (id: string) => setTeam1(prev => prev.filter(c => c.id !== id));
+    const addToTeam2 = (c: CountryData) => setTeam2(prev => [...prev, c]);
+    const removeFromTeam2 = (id: string) => setTeam2(prev => prev.filter(c => c.id !== id));
+
     const runSimulation = async () => {
-        if (!country1 || !country2) return;
+        if (team1.length === 0 || team2.length === 0) return;
 
-        // 1. Same Country Check
-        if (country1.id === country2.id) {
-            alert("Cannot simulate combat between the same country.");
-            return;
-        }
+        // Init Health
+        const t1Health: Record<string, number> = {};
+        const t2Health: Record<string, number> = {};
+        team1.forEach(c => t1Health[c.id] = 100);
+        team2.forEach(c => t2Health[c.id] = 100);
 
-        // Helper Data: Border Adjacency (ISO Alpha-3)
-        const BORDER_ADJACENCY: Record<string, string[]> = {
-            "sko": ["nko"],
-            "nko": ["sko", "chn", "rus"],
-            "chn": ["ind", "rus", "nko", "vnm", "mmr", "btn", "nep", "pak", "afg", "tjk", "kgz", "kaz", "mng"],
-            "ind": ["chn", "pak", "btn", "nep", "bgd", "mmr"],
-            "pak": ["ind", "chn", "afg", "irn"],
-            "rus": ["chn", "nko", "kaz", "mng", "geo", "aze", "ukr", "blr", "lva", "est", "fin", "nor", "pol"], // pol via Kaliningrad
-            "ukr": ["rus", "blr", "pol", "svk", "hun", "rou", "mda"],
-            "blr": ["rus", "ukr", "pol", "ltu", "lva"],
-            "pol": ["ukr", "blr", "deu", "cze", "svk", "ltu", "rus"],
-            "usa": ["can", "mex"],
-            "can": ["usa"],
-            "mex": ["usa", "gtm", "blz"],
-            "isr": ["egy", "jor", "syr", "lbn", "pse"],
-            "irn": ["pak", "afg", "tkm", "aze", "arm", "tur", "irq"],
-            "egy": ["isr", "pse", "lby", "sdn"],
-            "jor": ["isr", "pse", "syr", "irq", "sau"],
-            "syr": ["isr", "lbn", "tur", "irq", "jor"],
-            "lbn": ["isr", "syr"],
-            "tky": ["grc", "bgr", "geo", "arm", "aze", "irn", "irq", "syr"],
-            "tur": ["grc", "bgr", "geo", "arm", "aze", "irn", "irq", "syr"],
-            "grc": ["alb", "mkd", "bgr", "tur"],
-            "fra": ["bel", "lux", "deu", "che", "ita", "mco", "esp", "and"],
-            "deu": ["dnk", "pol", "cze", "aut", "che", "fra", "lux", "bel", "nld"],
-            "ger": ["dnk", "pol", "cze", "aut", "che", "fra", "lux", "bel", "nld"],
-            "ita": ["fra", "che", "aut", "svn"],
-            "ukd": ["irl"],
-            "bra": ["arg", "bol", "col", "guf", "guy", "pry", "per", "sur", "ury", "ven"],
-            "jpn": [],
-            "ino": ["mys", "png", "tls"],
-            "arg": ["bol", "bra", "chl", "pry", "ury"],
-            "bol": ["arg", "bra", "chl", "pry", "per"],
-        };
+        setTeam1Hp(t1Health);
+        setTeam2Hp(t2Health);
+        setWinner(null);
+        setBattleLogs([]);
+        setActiveTactics({});
 
-        const c1Id = country1.id.toLowerCase();
-        const c2Id = country2.id.toLowerCase();
+        setIsSimulating(true);
 
-        const neighbors1 = BORDER_ADJACENCY[c1Id] || [];
-        const isNeighbor = neighbors1.includes(c2Id);
-
-        // 2. Border Skirmish Constraint (Adjacency Check)
-        if (scenario === "BORDER_SKIRMISH") {
-            if (!isNeighbor) {
-                // Double check reverse direction just in case
-                const neighbors2 = BORDER_ADJACENCY[c2Id] || [];
-                if (!neighbors2.includes(c1Id)) {
-                    alert(`Border Skirmish is only available for countries sharing a land border.\n(e.g., South Korea vs North Korea, Ukraine vs Russia)`);
-                    return;
-                }
-            }
-        }
-
-        // Initialize new run
         const runId = Date.now();
         currentSimulationId.current = runId;
 
-        // Reset State
-        if (intervalRef.current) clearInterval(intervalRef.current);
-        setIsSimulating(true); // Prevent double clicks immediately
-        setBattleLogs([]);
-        setWinner(null);
-        setHp1(100);
-        setHp2(100);
-        setTactic1(null);
-        setTactic2(null);
-
-        const addLog = (msg: string, type: BattleLog["type"] = "info", source?: string) => {
+        const addLog = (msg: string, type: BattleLog["type"] = "info") => {
             setBattleLogs(prev => [...prev, {
                 timestamp: new Date().toLocaleTimeString('en-US', { hour12: false, hour: "2-digit", minute: '2-digit', second: '2-digit' }),
                 message: msg,
-                type,
-                source
+                type
             }]);
         };
 
-        addLog(`=== INITIALIZING SIMULATION: ${SCENARIOS[scenario].label.toUpperCase()} ===`);
-        if (useNuclear) {
-            addLog(`☢️ WARNING: NUCLEAR WEAPONS AUTHORIZED ☢️`, "critical");
-        }
-        addLog(`${country1.name} vs ${country2.name}`);
-
-        // Artillery Restriction Logic
-        const artilleryEnabled = isNeighbor;
-        if (!artilleryEnabled && scenario !== "NAVAL_BLOCKADE" && scenario !== "AIR_SUPERIORITY") {
-            addLog(`⚠️ DISTANCE: Non-adjacent countries. Artillery support unavailable (Damage Reduced).`, "info");
-        }
-
-        // Calculate Doctrines
-        const doctrine1 = getCountryDoctrine(country1);
-        const doctrine2 = getCountryDoctrine(country2);
-
-        addLog(`${country1.name} doctrine: ${DOCTRINE_INFO[doctrine1].label}`);
-        addLog(`${country2.name} doctrine: ${DOCTRINE_INFO[doctrine2].label}`);
-
-        // Personality Logic
-        const p1Type = getPersonality(country1.id);
-        const p2Type = getPersonality(country2.id);
-
-        addLog(`${country1.name} personality: ${PERSONALITY_INFO[p1Type].label}`);
-        addLog(`${country2.name} personality: ${PERSONALITY_INFO[p2Type].label}`);
+        addLog(`=== BATTLE START: ${SCENARIOS[scenario].label.toUpperCase()} ===`);
+        addLog(`BLUE TEAM (${team1.length}) vs RED TEAM (${team2.length})`);
 
         await new Promise(r => setTimeout(r, 1000));
         if (currentSimulationId.current !== runId) return;
 
-        // Combat Modifiers based on Doctrine vs Scenario
-        let mod1 = 1.0;
-        let mod2 = 1.0;
+        // Helper: Proximity-based target selection for Team Battle
+        const selectTargetByProximity = (attacker: CountryData, candidates: CountryData[]) => {
+            if (mode === "1v1" || candidates.length === 1) {
+                // 1v1 mode or single target: just return it
+                return candidates[0];
+            }
 
-        // Personality Modifiers
-        // Offensive: +10% deal, +5% take
-        // Defensive: -10% deal, -15% take
-        let p1DmgMult = 1.0; // Damage I deal
-        let p1DefMult = 1.0; // Damage I take
-        let p2DmgMult = 1.0;
-        let p2DefMult = 1.0;
+            // Calculate distances and weights
+            const weights = candidates.map(target => {
+                const dist = getDistance(
+                    attacker.latitude, attacker.longitude,
+                    target.latitude, target.longitude
+                );
+                // Closer countries have higher weight (inverse distance)
+                return { target, weight: 1 / (dist + 100) }; // +100 to avoid division by zero
+            });
 
-        if (p1Type === "OFFENSIVE") { p1DmgMult = 1.1; p1DefMult = 1.05; }
-        if (p1Type === "DEFENSIVE") { p1DmgMult = 0.9; p1DefMult = 0.85; }
+            // Weighted random selection
+            const totalWeight = weights.reduce((sum, w) => sum + w.weight, 0);
+            let random = Math.random() * totalWeight;
 
-        if (p2Type === "OFFENSIVE") { p2DmgMult = 1.1; p2DefMult = 1.05; }
-        if (p2Type === "DEFENSIVE") { p2DmgMult = 0.9; p2DefMult = 0.85; }
+            for (const { target, weight } of weights) {
+                random -= weight;
+                if (random <= 0) return target;
+            }
 
-        const applyDoctrineBonus = (doc: MilitaryDoctrine, scn: ScenarioType) => {
-            if (doc === "BALANCED") return 1.1; // Small consistent bonus
-            if (doc === "ASYMMETRIC") return 1.0; // Handled via crit chance
-
-            if (doc === "NAVAL_DOMINANT" && scn === "NAVAL_BLOCKADE") return 1.3;
-            if (doc === "AIR_DOMINANT" && scn === "AIR_SUPERIORITY") return 1.3;
-            if (doc === "LAND_DOMINANT" && (scn === "TOTAL_WAR" || scn === "BORDER_SKIRMISH")) return 1.25;
-
-            // Penalty for mismatch (e.g. Land power trying to do naval blockade)
-            if (doc === "LAND_DOMINANT" && scn === "NAVAL_BLOCKADE") return 0.8;
-            if (doc === "NAVAL_DOMINANT" && scn === "BORDER_SKIRMISH") return 0.9;
-
-            return 1.0;
+            return weights[0].target; // fallback
         };
 
-        mod1 = applyDoctrineBonus(doctrine1, scenario);
-        mod2 = applyDoctrineBonus(doctrine2, scenario);
-
-        // Modernization Tech Multiplier (Level 1=0.5x, Level 10=2.0x)
-        // Formula: 0.5 + (Level - 1) * (1.5 / 9)
-        const tech1 = country1.modernizationLevel || 5;
-        const tech2 = country2.modernizationLevel || 5;
-
-        const getTechMult = (lvl: number) => 0.5 + (lvl - 1) * 0.1666;
-        const techMult1 = getTechMult(tech1);
-        const techMult2 = getTechMult(tech2);
-
-        addLog(`Tech Lv ${tech1}: x${techMult1.toFixed(2)} Power`, "info", country1.name);
-        addLog(`Tech Lv ${tech2}: x${techMult2.toFixed(2)} Power`, "info", country2.name);
-
-        await new Promise(r => setTimeout(r, 1000));
-        if (currentSimulationId.current !== runId) return;
-
-        // Robust Power Calculation
-        const p1 = country1.powerIndex > 0 ? country1.powerIndex : 0.0001;
-        const p2 = country2.powerIndex > 0 ? country2.powerIndex : 0.0001;
-
-        // Raw Power: Inverse of PowerIndex (Lower is better)
-        // Apply Tech Multiplier to Raw Power
-        // Apply Personality Modifiers: (My Damage Output * Enemy Defense Reduction)
-        // Effectively: If I am Offensive (1.1x), and Enemy is Defensive (0.85x taken), my effective power is 1.1 * 1.0 (DefMult is self-taken, so we need to apply MY DmgMult and Enemy DefMult to MY damage output)
-
-        // Let's apply it directly to damage output instead of Raw Power for cleaner logic
-        // But here we set Raw Power which determines base damage.
-
-        const rawPower1 = (1 / p1) * (1 + Math.random() * 0.2) * mod1 * techMult1;
-        const rawPower2 = (1 / p2) * (1 + Math.random() * 0.2) * mod2 * techMult2;
-
-        // Simulation Loop State
-        let activeHp1 = 100;
-        let activeHp2 = 100;
-        let round = 1;
-        let hasNukeFired = false; // Track if nuke has been used
-
-        // Force reset UI immediately
-        setHp1(100);
-        setHp2(100);
-
-        // Check run ID before starting interval logic to be safe
-        if (currentSimulationId.current !== runId) return;
-
+        // Simulation Loop
         intervalRef.current = setInterval(() => {
             try {
-                if (activeHp1 <= 0 || activeHp2 <= 0) {
+                // Check Win Condition
+                const t1Alive = team1.filter(c => t1Health[c.id] > 0);
+                const t2Alive = team2.filter(c => t2Health[c.id] > 0);
+
+                if (t1Alive.length === 0 || t2Alive.length === 0) {
                     if (intervalRef.current) clearInterval(intervalRef.current);
                     setIsSimulating(false);
-                    const win = activeHp1 > activeHp2 ? country1 : country2;
-                    setWinner(win);
-                    addLog(`⭐⭐⭐ MISSION ACCOMPLISHED: ${win.name.toUpperCase()} VICTORY ⭐⭐⭐`, "victory");
+                    const winTeam = t1Alive.length > 0 ? "BLUE TEAM" : "RED TEAM";
+                    setWinner(winTeam);
+                    addLog(`⭐⭐⭐ VICTORY: ${winTeam} ELIMINATED THE ENEMY! ⭐⭐⭐`, "victory");
                     return;
                 }
 
-                // Nuclear Logic (Threshold: <= 40% HP, reduced damage for better gameplay)
-                if (useNuclear) {
-                    const baseDamage = 25; // Reduced from 30 for better pacing
-
-                    // Check Player 1 Trigger
-                    if (!hasNukeFired && country1.nuclear.hasNuclear && activeHp1 <= 40) {
-                        hasNukeFired = true;
-                        activeHp2 = Math.max(0, activeHp2 - baseDamage);
-                        setHp2(activeHp2);
-                        addLog(`☢️ EMERGENCY: ${country1.name} HP CRITICAL! NUCLEAR LAUNCH INITIATED! ☢️`, "critical");
-                        addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${baseDamage} HP)`, "damage");
-
-                        // Retaliation Check (slightly reduced damage)
-                        if (country2.nuclear.hasNuclear) {
-                            const retaliationDamage = Math.floor(baseDamage * 0.8); // 20 damage
-                            activeHp1 = Math.max(0, activeHp1 - retaliationDamage);
-                            setHp1(activeHp1);
-                            addLog(`🚀 RETALIATION DETECTED: ${country2.name} launches counter-strike!`, "critical");
-                            addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${retaliationDamage} HP)`, "damage");
-                        }
-                    }
-                    // Check Player 2 Trigger (if they hit threshold first)
-                    else if (!hasNukeFired && country2.nuclear.hasNuclear && activeHp2 <= 40) {
-                        hasNukeFired = true;
-                        activeHp1 = Math.max(0, activeHp1 - baseDamage);
-                        setHp1(activeHp1);
-                        addLog(`☢️ EMERGENCY: ${country2.name} HP CRITICAL! NUCLEAR LAUNCH INITIATED! ☢️`, "critical");
-                        addLog(`💥 IMPACT CONFIRMED: ${country1.name} sustains catastrophic damage (-${baseDamage} HP)`, "damage");
-
-                        // Retaliation Check (slightly reduced damage)
-                        if (country1.nuclear.hasNuclear) {
-                            const retaliationDamage = Math.floor(baseDamage * 0.8); // 20 damage
-                            activeHp2 = Math.max(0, activeHp2 - retaliationDamage);
-                            setHp2(activeHp2);
-                            addLog(`🚀 RETALIATION DETECTED: ${country1.name} launches counter-strike!`, "critical");
-                            addLog(`💥 IMPACT CONFIRMED: ${country2.name} sustains catastrophic damage (-${retaliationDamage} HP)`, "damage");
-                        }
-                    }
+                // Execution Phase
+                // 1. Pick random attacker from T1 -> Proximity-based target in T2
+                if (t1Alive.length > 0 && t2Alive.length > 0) {
+                    const attacker = t1Alive[Math.floor(Math.random() * t1Alive.length)];
+                    const target = selectTargetByProximity(attacker, t2Alive);
+                    executeAttack(attacker, target, t2Health, true);
                 }
 
-                // Damage Logic
-                const critChance1 = doctrine1 === "ASYMMETRIC" ? 0.3 : 0.1;
-                const critChance2 = doctrine2 === "ASYMMETRIC" ? 0.3 : 0.1;
-
-                let dmg1 = Math.max(5, Math.floor((Math.random() * 15 + 5) * (rawPower2 / rawPower1)));
-                let dmg2 = Math.max(5, Math.floor((Math.random() * 15 + 5) * (rawPower1 / rawPower2)));
-
-                // Artillery Penalty if not neighbors (only affects dmg when not air or naval specialized scenario)
-                if (!artilleryEnabled && scenario !== "AIR_SUPERIORITY" && scenario !== "NAVAL_BLOCKADE") {
-                    dmg1 = Math.floor(dmg1 * 0.85); // 15% penalty
-                    dmg2 = Math.floor(dmg2 * 0.85);
+                // 2. Pick random attacker from T2 -> Proximity-based target in T1
+                if (t2Alive.length > 0 && t1Alive.length > 0) {
+                    const attacker = t2Alive[Math.floor(Math.random() * t2Alive.length)];
+                    const target = selectTargetByProximity(attacker, t1Alive);
+                    executeAttack(attacker, target, t1Health, false);
                 }
 
-                // Tactic Triggers & Multipliers
-                let mult1 = 1.0;
-                let mult2 = 1.0;
+                // Update UI state
+                setTeam1Hp({ ...t1Health });
+                setTeam2Hp({ ...t2Health });
 
-                const SCENARIO_EVENTS: Record<ScenarioType, string[]> = {
-                    "TOTAL_WAR": [
-                        "launches continuous artillery barrage",
-                        "executes precision air strikes",
-                        "deploys special forces behind enemy lines",
-                        "advances armored divisions",
-                        "disrupts supply lines with cyber attacks",
-                        "engages in intense urban warfare"
-                    ],
-                    "NAVAL_BLOCKADE": [
-                        "fires anti-ship cruise missiles",
-                        "deploys hunter-killer submarines",
-                        "intercepts merchant shipping",
-                        "launches carrier-based sorties",
-                        "bombards coastal fortifications",
-                        "executes amphibious harassment raids"
-                    ],
-                    "AIR_SUPERIORITY": [
-                        "scrambles interceptor squadrons",
-                        "destroys enemy radar sites (SEAD)",
-                        "conducts high-altitude tactical bombing",
-                        "deploys loitering munitions (drones)",
-                        "engages in dogfights over contested airspace",
-                        "strikes strategic airfields"
-                    ],
-                    "BORDER_SKIRMISH": [
-                        "exchanges mortar fire across the border",
-                        "snipers engage enemy patrol units",
-                        "conducts limited recon-in-force",
-                        "claims disputed hilltops",
-                        "sabotages border checkpoints",
-                        "repels enemy border infiltration"
-                    ]
-                };
-                // Filter Events if Artillery Disabled
-                let events = [...SCENARIO_EVENTS[scenario]];
-                if (!artilleryEnabled) {
-                    events = events.filter(e =>
-                        !e.includes("artillery") &&
-                        !e.includes("mortar") &&
-                        !e.includes("howitzer")
-                    );
-                }
-
-                // Fetch Tactics (New System)
-                const p1Tactics = ALL_TACTICS.filter(t => t.personality === p1Type && t.scenario === scenario);
-                const p2Tactics = ALL_TACTICS.filter(t => t.personality === p2Type && t.scenario === scenario);
-
-                const executeTactic = (user: CountryData, pool: Tactic[], enemyPool: Tactic[], isP1: boolean) => {
-                    // 12% chance to trigger a tactic per tick
-                    if (pool.length > 0 && Math.random() < 0.12) {
-                        const tactic = pool[Math.floor(Math.random() * pool.length)];
-                        addLog(`${user.name} initiates [${tactic.name}]: ${tactic.description}`, "info", user.name);
-
-                        if (isP1) setTactic1(tactic.name);
-                        else setTactic2(tactic.name);
-
-                        let bonusApplied = true;
-
-                        // Counter-Tactic Check (25% chance if enemy has tactics available)
-                        if (enemyPool.length > 0 && Math.random() < 0.25) {
-                            const counter = enemyPool[Math.floor(Math.random() * enemyPool.length)];
-                            addLog(`COUNTER! ${isP1 ? country2.name : country1.name} responds with [${counter.name}]!`, "critical");
-
-                            // Show the counter tactic on the defender's side
-                            if (isP1) setTactic2(counter.name);
-                            else setTactic1(counter.name);
-
-                            bonusApplied = false; // Counter negates the bonus
-                        }
-
-                        if (bonusApplied) {
-                            if (isP1) mult1 *= 1.25;
-                            else mult2 *= 1.25;
-                        }
-                    }
-                };
-
-                executeTactic(country1, p1Tactics, p2Tactics, true);
-                executeTactic(country2, p2Tactics, p1Tactics, false);
-
-                // Apply Multipliers
-                // Personality Multipliers Applied Here
-                // dmg1 is damage dealt BY Player 1 TO Player 2
-                // So dmg1 = Base * p1DmgMult * (1 / p2DefMult)? No, easier to just multiplier.
-                // If P2 is Defensive, they take 0.85x damage. So dmg1 *= 0.85
-
-                dmg1 = Math.floor(dmg1 * mult1 * p1DmgMult * p2DefMult);
-                dmg2 = Math.floor(dmg2 * mult2 * p2DmgMult * p1DefMult);
-
-                // Critical Hits
-                if (Math.random() < critChance2) dmg1 = Math.floor(dmg1 * 1.5);
-                if (Math.random() < critChance1) dmg2 = Math.floor(dmg2 * 1.5);
-
-                // Apply Damage
-                activeHp1 = Math.max(0, activeHp1 - dmg1);
-                activeHp2 = Math.max(0, activeHp2 - dmg2);
-
-                console.log(`Round ${round}: P1(${activeHp1}) -${dmg1}, P2(${activeHp2}) -${dmg2}`);
-
-                // Check for Death
-                if (activeHp1 <= 0 || activeHp2 <= 0) {
-                    // Next loop tick handles victory logic
-                    setHp1(activeHp1);
-                    setHp2(activeHp2);
-                    return;
-                }
-
-                // Flavor Text
-                if (Math.random() > 0.5) {
-                    addLog(`${country1.name} ${events[Math.floor(Math.random() * events.length)]}`, "damage", country1.name);
-                    addLog(`${country2.name} sustains damage! (-${dmg2.toFixed(0)} HP)`, "critical");
-                } else {
-                    addLog(`${country2.name} ${events[Math.floor(Math.random() * events.length)]}`, "damage", country2.name);
-                    addLog(`${country1.name} defenses breached! (-${dmg1.toFixed(0)} HP)`, "critical");
-                }
-
-                // UI Update
-                setHp1(activeHp1);
-                setHp2(activeHp2);
-                round++;
-
-            } catch (error) {
-                console.error("Simulation Loop Error:", error);
-                addLog(`⚠️ SIMULATION ERROR: ${(error as Error).message}`, "critical");
-                setIsSimulating(false);
-                if (intervalRef.current) clearInterval(intervalRef.current);
+            } catch (e) {
+                console.error(e);
             }
         }, 1500);
+
+        // Helper: Check if country has required units for scenario tactics
+        const hasRequiredUnits = (country: CountryData, scenarioType: ScenarioType): boolean => {
+            switch (scenarioType) {
+                case "AIR_SUPERIORITY":
+                    return country.airforce.totalAircraft > 0;
+                case "NAVAL_BLOCKADE":
+                    return country.navy.totalShips > 0;
+                case "TOTAL_WAR":
+                case "BORDER_SKIRMISH":
+                    return true; // All countries can participate
+                default:
+                    return true;
+            }
+        };
+
+        // Attack Logic
+        const executeAttack = (attacker: CountryData, target: CountryData, targetHealthMap: Record<string, number>, isTeam1: boolean) => {
+            // Basic Power Calc
+            const pAtt = attacker.powerIndex > 0 ? attacker.powerIndex : 0.0001;
+            const pDef = target.powerIndex > 0 ? target.powerIndex : 0.0001;
+
+            // Inverted because lower is better for index
+            const powerRatio = (1 / pAtt) / (1 / pDef);
+
+            let damage = Math.max(5, Math.floor((Math.random() * 15 + 5) * powerRatio));
+
+            // Tactics with unit requirements
+            const pType = getPersonality(attacker.id);
+            const availableTactics = ALL_TACTICS.filter(t =>
+                t.personality === pType &&
+                t.scenario === scenario &&
+                hasRequiredUnits(attacker, scenario)
+            );
+
+            if (availableTactics.length > 0 && Math.random() > 0.3) {
+                const tactic = availableTactics[Math.floor(Math.random() * availableTactics.length)];
+                setActiveTactics(prev => ({ ...prev, [attacker.id]: tactic }));
+                addLog(`${attacker.name} uses [${tactic.name}] on ${target.name} (-${damage})`, "info");
+            } else {
+                setActiveTactics(prev => {
+                    const next = { ...prev };
+                    delete next[attacker.id];
+                    return next;
+                });
+                addLog(`${attacker.name} attacks ${target.name} (-${damage})`, "info");
+            }
+
+            // Apply Damage
+            targetHealthMap[target.id] = Math.max(0, targetHealthMap[target.id] - damage);
+        };
     };
 
     return (
-        <>
-            <main className="min-h-screen bg-slate-950 py-12">
-                <div className="max-w-6xl mx-auto px-4">
-                    {/* Header */}
-                    <div className="text-center mb-12">
-                        <h1 className="text-4xl font-black text-white mb-2 uppercase tracking-widest flex justify-center items-center gap-4">
-                            <Crosshair className="w-10 h-10 text-red-500" />
-                            Combat Simulation
-                            <Crosshair className="w-10 h-10 text-red-500" />
-                        </h1>
-                        <p className="text-slate-500 font-mono">WARGAMES // A.I. PREDICTION ENGINE</p>
+        <main className="min-h-screen bg-slate-950 py-12">
+            <div className="max-w-6xl mx-auto px-4">
+                {/* Header & Mode Select */}
+                <div className="text-center mb-8">
+                    <h1 className="text-4xl font-black text-white mb-4 uppercase flex justify-center items-center gap-4">
+                        <Crosshair className="w-10 h-10 text-red-500" />
+                        Combat Simulation
+                        <Crosshair className="w-10 h-10 text-red-500" />
+                    </h1>
+                    <div className="flex justify-center gap-4 mb-8">
+                        <button
+                            onClick={() => {
+                                setMode("1v1");
+                                resetSimulation();
+                                setTeam1([]); // Clear teams to prevent crossover
+                                setTeam2([]);
+                            }}
+                            className={`px-6 py-2 rounded-full font-bold transition-all ${mode === "1v1" ? "bg-red-600 text-white" : "bg-slate-800 text-slate-400"}`}
+                        >
+                            1v1 DUEL
+                        </button>
+                        <button
+                            onClick={() => {
+                                setMode("TEAM");
+                                resetSimulation();
+                                setTeam1([]);
+                                setTeam2([]);
+                            }}
+                            className={`px-6 py-2 rounded-full font-bold transition-all ${mode === "TEAM" ? "bg-blue-600 text-white" : "bg-slate-800 text-slate-400"}`}
+                        >
+                            TEAM BATTLE
+                        </button>
                     </div>
+                </div>
 
-                    {/* Controls */}
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8">
-                        {/* Player 1 */}
-                        <div className="lg:col-span-4 bg-slate-900/50 border border-blue-500/30 p-6 rounded-xl">
-                            <div className="text-blue-500 font-bold mb-4 flex items-center justify-between">
-                                <span className="flex items-center gap-2"><Shield className="w-5 h-5" /> BLUE FORCE</span>
-                                {country1 && (
-                                    <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(country1.id)].color} flex items-center gap-1`}>
-                                        {React.createElement(PERSONALITY_INFO[getPersonality(country1.id)].icon, { className: "w-3 h-3" })}
-                                        {PERSONALITY_INFO[getPersonality(country1.id)].label}
-                                    </span>
-                                )}
-                            </div>
-                            {tactic1 && (
-                                <div className="mb-4 text-xs font-mono text-amber-400 bg-amber-900/30 px-3 py-2 rounded border border-amber-500/50 flex items-center justify-between animate-pulse">
-                                    <span className="font-bold">TACTIC ACTIVE</span>
-                                    <span>{tactic1}</span>
-                                </div>
-                            )}
-                            <select
-                                className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4"
-                                value={country1Id}
-                                onChange={e => setCountry1Id(e.target.value)}
+                {/* Team Builders or 1v1 Selects */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    {mode === "TEAM" ? (
+                        <>
+                            <TeamBuilder
+                                teamName="BLUE TEAM"
+                                teamColor="blue"
+                                countries={countries}
+                                selectedCountries={team1}
+                                onAdd={addToTeam1}
+                                onRemove={removeFromTeam1}
                                 disabled={isSimulating}
-                            >
-                                <option value="">Select Country</option>
-                                {countries.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
-                            </select>
-                            {country1 && (
-                                <div className="text-center">
-                                    <img src={country1.flagUrl} className="w-24 h-16 object-cover mx-auto mb-2 rounded shadow-lg border border-slate-700" />
-                                    <div className="text-3xl font-bold">{Math.round(hp1)}%</div>
-                                    <div className="w-full bg-slate-800 h-2 mt-2 rounded-full overflow-hidden">
-                                        <div
-                                            className="h-full bg-blue-500 transition-all duration-500"
-                                            style={{ width: `${hp1}%` }}
-                                        />
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Middle Settings */}
-                        <div className="lg:col-span-4 flex flex-col items-center justify-center gap-4">
-                            <div className="w-full">
-                                <label className="text-slate-400 text-xs uppercase font-bold mb-2 block">Scenario Type</label>
-                                <div className="grid grid-cols-2 gap-2">
-                                    {(Object.keys(SCENARIOS) as ScenarioType[]).map(key => (
-                                        <button
-                                            key={key}
-                                            onClick={() => setScenario(key)}
-                                            disabled={isSimulating}
-                                            className={`p-2 text-xs border rounded transition-colors ${scenario === key
-                                                ? "bg-amber-500 text-black border-amber-500 font-bold"
-                                                : "bg-slate-900 text-slate-400 border-slate-700 hover:border-slate-500"
-                                                }`}
-                                        >
-                                            {SCENARIOS[key].label}
-                                        </button>
-                                    ))}
-                                </div>
-                                <p className="text-slate-500 text-xs mt-2 text-center h-8">
-                                    {SCENARIOS[scenario].desc}
-                                </p>
-                            </div>
-
-                            {!isSimulating && !winner && (
-                                <button
-                                    onClick={runSimulation}
-                                    disabled={!country1 || !country2 || country1.id === country2.id}
-                                    className="w-full py-4 bg-red-600 hover:bg-red-700 disabled:bg-slate-800 disabled:text-slate-600 text-white font-black text-xl rounded shadow-[0_0_20px_rgba(220,38,38,0.5)] transition-all flex items-center justify-center gap-2 uppercase tracking-tight"
-                                    title={country1?.id === country2?.id ? "Cannot simulate the same country" : ""}
-                                >
-                                    <Swords className="w-6 h-6" />
-                                    {country1?.id === country2?.id ? "Select Different Countries" : "Engage"}
-                                </button>
-                            )}
-
-                            {isSimulating && (
-                                <div className="text-amber-500 animate-pulse font-bold tracking-widest flex items-center gap-2">
-                                    SIMULATION IN PROGRESS...
-                                </div>
-                            )}
-
-                            {winner && (
-                                <button
-                                    onClick={resetSimulation}
-                                    className="w-full py-4 bg-amber-500 hover:bg-amber-600 text-black font-black text-xl rounded shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-all flex items-center justify-center gap-2 uppercase tracking-tight animate-bounce"
-                                >
-                                    <Trophy className="w-6 h-6" />
-                                    Play Again
-                                </button>
-                            )}
-                        </div>
-
-                        {/* Player 2 */}
-                        <div className="lg:col-span-4 bg-slate-900/50 border border-red-500/30 p-6 rounded-xl">
-                            <div className="text-red-500 font-bold mb-4 flex items-center justify-between">
-                                {country2 && (
-                                    <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(country2.id)].color} flex items-center gap-1`}>
-                                        {React.createElement(PERSONALITY_INFO[getPersonality(country2.id)].icon, { className: "w-3 h-3" })}
-                                        {PERSONALITY_INFO[getPersonality(country2.id)].label}
-                                    </span>
-                                )}
-                                <span className="flex items-center gap-2">RED FORCE <Shield className="w-5 h-5" /></span>
-                            </div>
-                            {tactic2 && (
-                                <div className="mb-4 text-xs font-mono text-amber-400 bg-amber-900/30 px-3 py-2 rounded border border-amber-500/50 flex items-center justify-between animate-pulse">
-                                    <span className="font-bold">TACTIC ACTIVE</span>
-                                    <span>{tactic2}</span>
-                                </div>
-                            )}
-                            <select
-                                className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4"
-                                value={country2Id}
-                                onChange={e => setCountry2Id(e.target.value)}
+                            />
+                            <TeamBuilder
+                                teamName="RED TEAM"
+                                teamColor="red"
+                                countries={countries}
+                                selectedCountries={team2}
+                                onAdd={addToTeam2}
+                                onRemove={removeFromTeam2}
                                 disabled={isSimulating}
-                            >
-                                <option value="">Select Country</option>
-                                {countries.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
-                            </select>
-                            {country2 && (
-                                <div className="text-center">
-                                    <img src={country2.flagUrl} className="w-24 h-16 object-cover mx-auto mb-2 rounded shadow-lg border border-slate-700" />
-                                    <div className="text-3xl font-bold">{Math.round(hp2)}%</div>
-                                    <div className="w-full bg-slate-800 h-2 mt-2 rounded-full overflow-hidden">
-                                        <div
-                                            className="h-full bg-red-500 transition-all duration-500"
-                                            style={{ width: `${hp2}%` }}
-                                        />
-                                    </div>
+                            />
+                        </>
+                    ) : (
+                        <>
+                            {/* Player 1 (Blue) */}
+                            <div className="bg-slate-900/50 border border-blue-500/30 p-6 rounded-xl relative overflow-hidden">
+                                <div className="text-blue-500 font-bold mb-4 flex items-center justify-between z-10 relative">
+                                    <span className="flex items-center gap-2"><Shield className="w-5 h-5" /> BLUE FORCE</span>
+                                    {team1[0] && (
+                                        <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(team1[0].id)].color} flex items-center gap-1`}>
+                                            {React.createElement(PERSONALITY_INFO[getPersonality(team1[0].id)].icon, { className: "w-3 h-3" })}
+                                            {PERSONALITY_INFO[getPersonality(team1[0].id)].label}
+                                        </span>
+                                    )}
                                 </div>
-                            )}
+
+                                <select
+                                    className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4 z-10 relative"
+                                    value={team1[0]?.id || ""}
+                                    onChange={e => handle1v1Select1(e.target.value)}
+                                    disabled={isSimulating}
+                                >
+                                    <option value="">Select Country</option>
+                                    {countries.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+                                </select>
+
+                                {team1[0] && (
+                                    <div className="text-center z-10 relative">
+                                        <img src={team1[0].flagUrl} className="w-32 h-20 object-cover mx-auto mb-4 rounded shadow-lg border border-slate-700" />
+                                        <div className="text-4xl font-black mb-2">{Math.round(team1Hp[team1[0].id] ?? 100)}%</div>
+                                        <div className="w-full bg-slate-800 h-4 rounded-full overflow-hidden border border-slate-700">
+                                            <div
+                                                className="h-full bg-gradient-to-r from-blue-600 to-blue-400 transition-all duration-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"
+                                                style={{ width: `${team1Hp[team1[0].id] ?? 100}%` }}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                                {/* Background decoration */}
+                                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl"></div>
+                            </div>
+
+                            {/* Player 2 (Red) */}
+                            <div className="bg-slate-900/50 border border-red-500/30 p-6 rounded-xl relative overflow-hidden">
+                                <div className="text-red-500 font-bold mb-4 flex items-center justify-between z-10 relative">
+                                    <span className="flex items-center gap-2">RED FORCE <Shield className="w-5 h-5" /></span>
+                                    {team2[0] && (
+                                        <span className={`text-xs px-2 py-1 rounded bg-slate-800 border ${PERSONALITY_INFO[getPersonality(team2[0].id)].color} flex items-center gap-1`}>
+                                            {React.createElement(PERSONALITY_INFO[getPersonality(team2[0].id)].icon, { className: "w-3 h-3" })}
+                                            {PERSONALITY_INFO[getPersonality(team2[0].id)].label}
+                                        </span>
+                                    )}
+                                </div>
+
+                                <select
+                                    className="w-full bg-slate-950 border border-slate-700 text-white p-3 rounded mb-4 z-10 relative"
+                                    value={team2[0]?.id || ""}
+                                    onChange={e => handle1v1Select2(e.target.value)}
+                                    disabled={isSimulating}
+                                >
+                                    <option value="">Select Country</option>
+                                    {countries.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+                                </select>
+
+                                {team2[0] && (
+                                    <div className="text-center z-10 relative">
+                                        <img src={team2[0].flagUrl} className="w-32 h-20 object-cover mx-auto mb-4 rounded shadow-lg border border-slate-700" />
+                                        <div className="text-4xl font-black mb-2">{Math.round(team2Hp[team2[0].id] ?? 100)}%</div>
+                                        <div className="w-full bg-slate-800 h-4 rounded-full overflow-hidden border border-slate-700">
+                                            <div
+                                                className="h-full bg-gradient-to-r from-red-600 to-red-400 transition-all duration-500 shadow-[0_0_10px_rgba(239,68,68,0.5)]"
+                                                style={{ width: `${team2Hp[team2[0].id] ?? 100}%` }}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                                {/* Background decoration */}
+                                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-red-500/5 rounded-full blur-3xl"></div>
+                            </div>
+                        </>
+                    )}
+                </div>
+
+                {/* Active Tactics Display (Dedicated Section) */}
+                {isSimulating && Object.keys(activeTactics).length > 0 && (
+                    <div className="mb-8">
+                        <div className="text-center text-slate-400 text-xs font-mono uppercase tracking-widest mb-4">- Active Tactics -</div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {Object.entries(activeTactics).map(([countryId, tactic]) => {
+                                const c = getCountryById(countryId);
+                                if (!c) return null;
+                                const isTeam1 = team1.some(t => t.id === c.id);
+                                return (
+                                    <div key={countryId} className={`bg-slate-900/80 border ${isTeam1 ? "border-blue-500/40" : "border-red-500/40"} p-3 rounded-lg flex items-center gap-4 animate-in fade-in slide-in-from-bottom-2 shadow-lg backdrop-blur`}>
+                                        <img src={c.flagUrl} className="w-12 h-8 object-cover rounded shadow border border-slate-700" />
+                                        <div className="flex-1 min-w-0">
+                                            <div className="flex justify-between items-center mb-1">
+                                                <span className={`font-bold text-xs ${isTeam1 ? "text-blue-400" : "text-red-400"}`}>{c.name}</span>
+                                                <span className="text-[10px] bg-slate-800 px-1.5 py-0.5 rounded text-slate-400">{tactic.name}</span>
+                                            </div>
+                                            <div className="text-xs text-slate-300 leading-tight truncate">{tactic.description}</div>
+                                        </div>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
+                )}
 
-                    {/* Nuclear Option Toggle */}
-                    {canUseNuclear && (
-                        <div className="flex items-center justify-between bg-red-900/20 border border-red-500/30 p-4 rounded-xl">
-                            <div className="flex items-center gap-3">
-                                <div className="p-2 bg-red-500/10 rounded-lg">
-                                    <Skull className="w-5 h-5 text-red-500" />
-                                </div>
-                                <div>
-                                    <h3 className="text-red-200 font-medium">Nuclear Option</h3>
-                                    <p className="text-red-400/60 text-xs">Authorize nuclear arsenal usage</p>
-                                </div>
+                {/* Active Combat Status (Only when simulating AND in Team Mode) - Removed Popups */}
+                {isSimulating && mode === "TEAM" && (
+                    <div className="mb-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        {/* Blue Team Status */}
+                        <div className="space-y-2">
+                            {team1.map(c => {
+                                const hp = team1Hp[c.id] ?? 100;
+                                return (
+                                    <div key={c.id} className={`bg-slate-900 border ${hp === 0 ? "border-slate-800 opacity-50" : "border-blue-500/30"} p-2 rounded flex items-center gap-3 relative overflow-hidden transition-all`}>
+                                        <img src={c.flagUrl} className="w-10 h-6 object-cover rounded opacity-80" />
+                                        <div className="flex-1 z-10">
+                                            <div className="flex justify-between text-xs font-bold text-slate-300 mb-1">
+                                                <span>{c.name}</span>
+                                                <span className={hp < 30 ? "text-red-500" : "text-blue-400"}>{hp}%</span>
+                                            </div>
+                                            <div className="h-1 bg-slate-800 rounded-full overflow-hidden">
+                                                <div className="h-full bg-blue-500 transition-all duration-300" style={{ width: `${hp}%` }} />
+                                            </div>
+                                        </div>
+                                        {hp <= 0 && <Skull className="absolute right-2 w-6 h-6 text-slate-700" />}
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        {/* Red Team Status */}
+                        <div className="space-y-2">
+                            {team2.map(c => {
+                                const hp = team2Hp[c.id] ?? 100;
+                                return (
+                                    <div key={c.id} className={`bg-slate-900 border ${hp === 0 ? "border-slate-800 opacity-50" : "border-red-500/30"} p-2 rounded flex items-center gap-3 relative overflow-hidden transition-all`}>
+                                        <div className="flex-1 z-10 text-right">
+                                            <div className="flex justify-between text-xs font-bold text-slate-300 mb-1">
+                                                <span className={hp < 30 ? "text-red-500" : "text-red-400"}>{hp}%</span>
+                                                <span>{c.name}</span>
+                                            </div>
+                                            <div className="h-1 bg-slate-800 rounded-full overflow-hidden flex justify-end">
+                                                <div className="h-full bg-red-500 transition-all duration-300" style={{ width: `${hp}%` }} />
+                                            </div>
+                                        </div>
+                                        <img src={c.flagUrl} className="w-10 h-6 object-cover rounded opacity-80" />
+                                        {hp <= 0 && <Skull className="absolute left-2 w-6 h-6 text-slate-700" />}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
+
+                {/* Scenario & Controls */}
+                <div className="text-center mb-8">
+                    {!isSimulating && !winner && (
+                        <div className="mb-6">
+                            <h3 className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-3">Combat Scenario</h3>
+                            <div className="flex flex-wrap justify-center gap-2">
+                                {(Object.keys(SCENARIOS) as ScenarioType[]).map((s) => (
+                                    <button
+                                        key={s}
+                                        onClick={() => setScenario(s)}
+                                        className={`px-4 py-2 rounded text-xs font-bold uppercase transition-all border ${scenario === s
+                                            ? "bg-amber-500 text-black border-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]"
+                                            : "bg-slate-900 text-slate-500 border-slate-800 hover:border-slate-600"
+                                            }`}
+                                    >
+                                        {SCENARIOS[s].label}
+                                    </button>
+                                ))}
                             </div>
-                            <button
-                                onClick={() => setUseNuclear(!useNuclear)}
-                                className={`
-                                    relative w-12 h-6 rounded-full transition-colors duration-200 ease-in-out
-                                    ${useNuclear ? 'bg-red-600' : 'bg-slate-700'}
-                                `}
-                            >
-                                <span
-                                    className={`
-                                        absolute top-1 left-1 w-4 h-4 rounded-full bg-white transition-transform duration-200 ease-in-out
-                                        ${useNuclear ? 'translate-x-6' : 'translate-x-0'}
-                                    `}
-                                />
-                            </button>
                         </div>
                     )}
 
-                    {/* Disclaimer */}
-                    <div className="mt-8 p-4 bg-red-900/20 border border-red-900/50 rounded-lg text-center">
-                        <div className="flex items-center justify-center gap-2 text-red-400 font-bold mb-2">
-                            <AlertTriangle className="w-5 h-5" />
-                            <span>SIMULATION DISCLAIMER</span>
+                    <p className="text-slate-400 mb-4 font-mono text-sm max-w-2xl mx-auto border-l-2 border-slate-700 pl-4 py-2 bg-slate-900/50 rounded-r">
+                        <span className="text-amber-500 font-bold mr-2">[{SCENARIOS[scenario].label}]</span>
+                        {SCENARIOS[scenario].desc}
+                    </p>
+
+                    {!isSimulating && !winner && (
+                        <button
+                            onClick={runSimulation}
+                            disabled={team1.length === 0 || team2.length === 0}
+                            className="bg-red-600 hover:bg-red-700 text-white font-black py-4 px-12 rounded-lg shadow-lg text-xl uppercase transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            START BATTLE
+                        </button>
+                    )}
+
+                    {winner && (
+                        <div className="animate-bounce">
+                            <div className="text-2xl font-black text-amber-500 mb-2">{winner} WINS!</div>
+                            <button onClick={resetSimulation} className="bg-amber-500 text-black font-bold py-2 px-6 rounded hover:bg-amber-400">
+                                PLAY AGAIN
+                            </button>
                         </div>
-                        <p className="text-slate-400 text-sm max-w-3xl mx-auto">
-                            This simulation is for entertainment and educational purposes only. The results are generated based on approximate military data and simplified algorithms. It does not reflect real-world geopolitical complexities, logistics, or morale. Please do not use this for real-world strategic planning.
-                            <br className="my-2" />
-                            본 시뮬레이션은 단순화된 수치와 확률에 기반한 가상 결과입니다. 실제 현대전의 복잡성(보급, 사기, 전술 등)을 완벽히 반영하지 않으므로, 결과는 재미로만 봐주시기 바랍니다.
-                        </p>
-                    </div>
-
-                    {/* Battle Log */}
-                    <div className="bg-black border border-slate-800 rounded-lg p-6 font-mono text-sm h-96 overflow-y-auto shadow-inner relative">
-                        <div className="absolute top-0 left-0 w-full h-full pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] z-10 bg-[length:100%_2px,3px_100%]"></div>
-
-                        {battleLogs.length === 0 && (
-                            <div className="text-slate-600 text-center mt-32">Initialize parameters to begin simulation...</div>
-                        )}
-
-                        <div className="space-y-2 relative z-0">
-                            {battleLogs.map((log, i) => (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, x: -20 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    className={`flex gap-4 ${log.type === "victory" ? "text-amber-400 font-bold text-lg border-y border-amber-900 py-2 my-4" :
-                                        log.type === "critical" ? "text-red-400" :
-                                            log.type === "damage" ? "text-white" : "text-slate-400"
-                                        }`}
-                                >
-                                    <span className="text-slate-600">[{log.timestamp}]</span>
-                                    <span>{log.message}</span>
-                                </motion.div>
-                            ))}
-                            <div id="log-end" />
-                        </div>
-                    </div>
-
+                    )}
                 </div>
-            </main >
 
-        </>
+                {/* Battle Log */}
+                <div className="bg-black border border-slate-800 rounded-lg p-4 h-64 overflow-y-auto font-mono text-xs">
+                    {battleLogs.length === 0 ? <span className="text-slate-600">Waiting for deployment...</span> : (
+                        <div className="space-y-1">
+                            {battleLogs.map((log, i) => (
+                                <div key={i} className={`
+                                    ${log.type === 'victory' ? 'text-amber-400 font-bold text-base' :
+                                        log.type === 'critical' ? 'text-red-400' : 'text-slate-400'}
+                                `}>
+                                    <span className="opacity-50 mr-2">[{log.timestamp}]</span>
+                                    {log.message}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+
+            </div>
+        </main>
     );
 }
 
-export default function SimulationPage() {
+const SimulationPage = () => {
     return (
         <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center"><div className="text-white">Loading...</div></div>}>
             <SimulationPageContent />
         </Suspense>
     );
-}
+};
+
+export default SimulationPage;

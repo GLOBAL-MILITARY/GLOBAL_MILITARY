@@ -376,6 +376,23 @@ export default function CountryDetailClient({
                         </motion.div>
                     </div>
 
+                    {/* Relations Zone */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                        {/* Allies */}
+                        <CollapsibleRelationSection
+                            title="Allies"
+                            icon={<Shield className="w-5 h-5 text-green-400" />}
+                            items={sortedAllies}
+                        />
+
+                        {/* Threats */}
+                        <CollapsibleRelationSection
+                            title="Potential Threats"
+                            icon={<AlertTriangle className="w-5 h-5 text-red-400" />}
+                            items={sortedThreats}
+                        />
+                    </div>
+
                     {/* Tactics Zone */}
                     <div className="mb-8">
                         <motion.div
@@ -421,23 +438,6 @@ export default function CountryDetailClient({
                                 </div>
                             </div>
                         </motion.div>
-                    </div>
-
-                    {/* Relations Zone */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        {/* Allies */}
-                        <CollapsibleRelationSection
-                            title="Allies"
-                            icon={<Shield className="w-5 h-5 text-green-400" />}
-                            items={sortedAllies}
-                        />
-
-                        {/* Threats */}
-                        <CollapsibleRelationSection
-                            title="Potential Threats"
-                            icon={<AlertTriangle className="w-5 h-5 text-red-400" />}
-                            items={sortedThreats}
-                        />
                     </div>
                 </div >
             </main >

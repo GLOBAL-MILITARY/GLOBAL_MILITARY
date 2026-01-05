@@ -465,140 +465,140 @@ export const ALL_TACTICS: Tactic[] = [
     {
         id: "offensive_air_superiority_60",
         name: "Total Air Superiority",
-        description: "모든 전투기를 출격시켜 적의 공군 전력을 하늘에서 완전히 제거합니다. 적 비행기가 한 대도 뜰 수 없는 환경을 만들어 지상군의 안전을 확보합니다.",
+        description: "Launch all fighters to completely eliminate enemy air power in the sky. Create an environment where not a single enemy plane can fly, ensuring ground force safety.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_61",
         name: "Strategic Bomber Deployment",
-        description: "거대한 폭격기 편대를 투입하여 적의 산업 중심지와 주요 도시를 맹폭합니다. 적의 전쟁 의지 자체를 초토화하는 강력한 공중 공세입니다.",
+        description: "Deploy massive bomber formations to devastate enemy industrial centers and major cities. A powerful aerial assault that obliterates the enemy's will to fight.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_62",
         name: "Drone Swarm Raid",
-        description: "수천 대의 소형 자폭 드론을 한꺼번에 날려 보내 적의 방공망을 마비시킵니다. 값싼 드론으로 고가의 방공 미사일을 소진시키고 목표를 타격합니다.",
+        description: "Launch thousands of small suicide drones simultaneously to paralyze enemy air defenses. Exhaust expensive anti-air missiles with cheap drones, then strike the target.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_63",
         name: "Airfield Pre-emptive Strike",
-        description: "전쟁 시작과 동시에 적의 모든 활주로와 격납고를 정밀 미사일로 타격합니다. 적 공군이 이륙조차 하지 못하게 만들어 하늘을 선점합니다.",
+        description: "Strike all enemy runways and hangars with precision missiles at war's start. Prevent enemy air force from even taking off, seizing control of the skies.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_64",
         name: "High-Altitude Missile Bombing",
-        description: "적의 레이더가 닿지 않는 성층권에서 유도 미사일을 발사합니다. 보이지 않는 곳에서 가해지는 타격으로 적에게 극심한 공포를 심어줍니다.",
+        description: "Launch guided missiles from the stratosphere beyond enemy radar range. Strikes from invisible heights inflict extreme terror on the enemy.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_65",
         name: "SEAD Operation",
-        description: "대레이더 미사일을 장착한 특수 기체로 적의 지대공 미사일 기지를 사냥합니다. 공중 공격의 가장 큰 걸림돌인 방공망을 우선적으로 제거합니다.",
+        description: "Hunt enemy surface-to-air missile sites with specialized aircraft carrying anti-radar missiles. Prioritize eliminating air defenses, the biggest obstacle to aerial attacks.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_66",
         name: "Close Air Support (CAS)",
-        description: "지상군과 긴밀히 협력하여 전선 바로 위의 적 부대를 직접 공격합니다. 저공 비행을 하며 가틀링 건과 로켓으로 적의 기갑 부대를 파괴합니다.",
+        description: "Coordinate closely with ground forces to directly attack enemy units at the front line. Fly low and destroy enemy armored units with Gatling guns and rockets.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_67",
         name: "Air Assault",
-        description: "수송기와 헬기를 이용해 적의 후방 요충지에 대규모 낙하산 부대를 투입합니다. 하늘을 통해 적의 방어선을 건너뛰어 바로 핵심 지점을 장악합니다.",
+        description: "Deploy massive paratrooper forces to enemy rear strategic points using transports and helicopters. Leapfrog enemy defense lines through the sky to seize key positions directly.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_68",
         name: "Aerial Refueling Operation",
-        description: "공중 급유기를 동원해 아군 전투기의 작전 반경과 체류 시간을 비약적으로 늘립니다. 적 본토 깊숙한 곳까지 중단 없는 공격을 가능하게 합니다.",
+        description: "Deploy aerial refueling tankers to dramatically extend fighter operational range and loiter time. Enable uninterrupted attacks deep into enemy homeland.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_69",
         name: "Electronic Warfare Deception",
-        description: "강력한 전파 방해 장비로 적의 레이더에 가짜 신호를 수백 개 생성합니다. 혼란에 빠진 적군이 허공에 미사일을 쏘게 유도한 뒤 실제 공격을 가합니다.",
+        description: "Generate hundreds of fake signals on enemy radar using powerful jamming equipment. Lead confused enemy to fire missiles at empty air, then launch the real attack.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_70",
         name: "Fighter Patrol Annihilation",
-        description: "특정 구역을 비행하는 적의 정찰기나 조기경보기를 우선적으로 격추합니다. 적의 정보 수집 능력을 차단하여 아군의 움직임을 은폐합니다.",
+        description: "Prioritize shooting down enemy reconnaissance planes and early warning aircraft patrolling specific areas. Cut off enemy intelligence gathering to conceal friendly movements.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_71",
         name: "Fixed Target Bombing",
-        description: "벙커 버스터 등 특수 폭탄을 사용하여 적의 지하 벙커와 견고한 요새를 파괴합니다. 아무리 깊은 곳에 숨어도 공중 타격을 피할 수 없음을 보여줍니다.",
+        description: "Use special bombs like bunker busters to destroy enemy underground bunkers and fortified strongholds. Show that no matter how deep they hide, aerial strikes cannot be avoided.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_72",
         name: "Runway Destruction",
-        description: "관통 탄두를 사용해 적의 활주로에 거대한 구멍을 뚫어 이착륙을 막습니다. 복구 전까지 적 공군을 지상에 묶어두는 효과적인 봉쇄 전술입니다.",
+        description: "Use penetrating warheads to punch massive holes in enemy runways, preventing takeoffs and landings. An effective blockade tactic that keeps enemy air force grounded until repairs are made.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_73",
         name: "AWACS Strike",
-        description: "적의 지휘 항공기를 타격하여 공중전의 컨트롤 타워를 제거합니다. 지휘를 잃은 적 전투기들을 각개격파하여 공중전의 승기를 잡습니다.",
+        description: "Strike enemy command aircraft to eliminate the control tower of aerial warfare. Destroy enemy fighters individually after they lose command to gain air superiority.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_74",
         name: "Guided Missile Barrage",
-        description: "수백 발의 크루즈 미사일을 동시에 발사하여 적의 방공망이 감당할 수 없는 과부하를 줍니다. 일부 미사일이 격추되더라도 나머지가 목표를 확실히 파괴합니다.",
+        description: "Launch hundreds of cruise missiles simultaneously to overload enemy air defenses beyond capacity. Even if some missiles are shot down, the rest will certainly destroy the targets.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_75",
         name: "Supersonic Penetration",
-        description: "소리보다 빠른 속도로 적의 방어선을 돌파하여 눈 깜짝할 새 공격하고 사라집니다. 적이 레이더를 확인하기도 전에 이미 상황을 종료시키는 전광석화 작전입니다.",
+        description: "Break through enemy defense lines at supersonic speed, attack in the blink of an eye, and vanish. A lightning-fast operation that ends the situation before the enemy can even check their radar.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_76",
         name: "Aerial Interception",
-        description: "아군 본토로 향하는 적의 폭격기 편대를 공중에서 미리 차단합니다. 적의 공격 시도를 하늘에서 분쇄하여 지상의 피해를 완벽히 막아냅니다.",
+        description: "Intercept enemy bomber formations heading toward friendly homeland in mid-air. Crush enemy attack attempts in the sky to completely prevent ground damage.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_77",
         name: "Satellite Recon Strike",
-        description: "위성으로 파악한 실시간 좌표를 이용해 오차 없는 공중 폭격을 가합니다. 구름 위나 밤중에도 적의 작은 움직임 하나까지 놓치지 않고 타격합니다.",
+        description: "Conduct pinpoint aerial bombardment using real-time coordinates identified by satellites. Strike without missing even the smallest enemy movements above clouds or at night.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_78",
         name: "Stealth Bombing",
-        description: "레이더에 잡히지 않는 스텔스기를 투입하여 적의 가장 삼엄한 방어 구역을 통과합니다. 예고 없이 적의 핵심 시설을 파괴하고 유유히 빠져나옵니다.",
+        description: "Deploy stealth aircraft invisible to radar to penetrate enemy's most heavily defended zones. Destroy key enemy facilities without warning and escape leisurely.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
     {
         id: "offensive_air_superiority_79",
         name: "Air Command Neutralization",
-        description: "지상의 지휘 통제 센터를 공중에서 정밀 타격하여 전쟁 수행 지능을 마비시킵니다. 적군 전체를 머리 없는 신체처럼 만들어 우왕좌왕하게 만듭니다.",
+        description: "Precision strike ground command and control centers from the air to paralyze war-fighting intelligence. Turn the entire enemy force into a headless body, making them wander in confusion.",
         personality: "OFFENSIVE",
         scenario: "AIR_SUPERIORITY"
     },
@@ -1256,7 +1256,7 @@ export const ALL_TACTICS: Tactic[] = [
     {
         id: "neutral_total_war_173",
         name: "Defensive Deterrence",
-        description: "\"공격하면 너도 죽는다\"는 핵전력이나 강력한 무기를 보여주며 평화를 유지합니다.",
+        description: "Maintain peace by displaying nuclear capabilities or powerful weapons with the message 'If you attack, you die too.'",
         personality: "NEUTRAL",
         scenario: "TOTAL_WAR"
     },
@@ -1585,7 +1585,7 @@ export const ALL_TACTICS: Tactic[] = [
     {
         id: "neutral_air_superiority_220",
         name: "No-Fly Zone",
-        description: "특정 하늘을 \"누구도 날 수 없는 곳\"으로 선포해 공습을 원천 차단합니다.",
+        description: "Declare specific airspace as a 'No-Fly Zone where no one can fly' to completely block air raids.",
         personality: "NEUTRAL",
         scenario: "AIR_SUPERIORITY"
     },

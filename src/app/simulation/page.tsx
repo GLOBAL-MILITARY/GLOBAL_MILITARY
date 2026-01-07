@@ -219,8 +219,8 @@ function SimulationPageContent() {
             // Calculate distances and weights
             const weights = candidates.map(target => {
                 const dist = getDistance(
-                    attacker.latitude, attacker.longitude,
-                    target.latitude, target.longitude
+                    attacker.coordinates[0], attacker.coordinates[1],
+                    target.coordinates[0], target.coordinates[1]
                 );
                 // Closer countries have higher weight (inverse distance)
                 return { target, weight: 1 / (dist + 100) }; // +100 to avoid division by zero
@@ -326,7 +326,12 @@ function SimulationPageContent() {
             }
 
             // Apply Damage
-            targetHealthMap[target.id] = Math.max(0, targetHealthMap[target.id] - damage);
+            const currentHp = targetHealthMap[target.id] || 100;
+            const newHp = Math.max(0, currentHp - damage);
+            targetHealthMap[target.id] = newHp;
+
+            // Log HP change for debugging
+            console.log(`${target.name} HP: ${currentHp} -> ${newHp} (damage: ${damage})`);
         };
     };
 

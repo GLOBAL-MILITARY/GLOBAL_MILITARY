@@ -1,14 +1,15 @@
 "use client";
 
-import { Github, Twitter, Linkedin, Mail, Globe, Crosshair } from "lucide-react";
+import { Globe, Crosshair } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
     return (
         <footer className="bg-slate-900 border-t border-slate-800 mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* About Section */}
-                    <div className="md:col-span-2">
+                    <div>
                         <div className="flex items-center gap-3 mb-4">
                             <div className="relative w-10 h-10 flex items-center justify-center bg-slate-900 rounded-xl border border-slate-700 shadow-lg overflow-hidden">
                                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-purple-600/10" />
@@ -31,41 +32,11 @@ export default function Footer() {
                                 </span>
                             </div>
                         </div>
-                        <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                        <p className="text-slate-400 text-sm leading-relaxed">
                             Comprehensive analysis platform for global military power rankings,
                             capabilities, and defense statistics. Providing insights into the
                             world's military forces.
                         </p>
-                        <div className="flex items-center gap-4">
-                            <a
-                                href="#"
-                                className="text-slate-400 hover:text-slate-200 transition-colors"
-                                aria-label="Twitter"
-                            >
-                                <Twitter className="w-5 h-5" />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-slate-400 hover:text-slate-200 transition-colors"
-                                aria-label="LinkedIn"
-                            >
-                                <Linkedin className="w-5 h-5" />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-slate-400 hover:text-slate-200 transition-colors"
-                                aria-label="GitHub"
-                            >
-                                <Github className="w-5 h-5" />
-                            </a>
-                            <a
-                                href="mailto:commonsensestory@gmail.com"
-                                className="text-slate-400 hover:text-slate-200 transition-colors"
-                                aria-label="Email Contact"
-                            >
-                                <Mail className="w-5 h-5" />
-                            </a>
-                        </div>
                     </div>
 
                     {/* Quick Links */}
@@ -73,75 +44,36 @@ export default function Footer() {
                         <h3 className="text-slate-100 font-semibold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
-                                <a
+                                <Link
                                     href="/"
                                     className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
                                 >
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/rankings"
                                     className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
                                 >
                                     Rankings
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/compare"
                                     className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
                                 >
                                     Compare
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/simulation"
                                     className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
                                 >
-                                    About
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* Resources */}
-                    <div>
-                        <h3 className="text-slate-100 font-semibold mb-4">Resources</h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
-                                >
-                                    Documentation
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
-                                >
-                                    API
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
-                                >
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="text-slate-400 hover:text-slate-200 transition-colors text-sm"
-                                >
-                                    Terms of Service
-                                </a>
+                                    Simulation
+                                </Link>
                             </li>
                         </ul>
                     </div>
